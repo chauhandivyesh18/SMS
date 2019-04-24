@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ChangePassword.SetPinFragments.SetPinMidFragment">
+
+    <include layout="@layout/greetings_layout" />
+
+    <!--<TextView
+        style="@style/ExtendedLoginFooterTextViewStyle"
+        android:text="@string/enter_pin"
+        android:layout_marginTop="22dp"/>-->
+
+    <!--<include layout="@layout/pin_edittext_layout" />-->
+
+    <FrameLayout style="@style/ExtendedLoginIconAndEditTextFrameLayoutStyle">
+
+        <ImageView style="@style/PasswordIconStyle" />
+
+        <EditText
+            android:id="@+id/pin_edittext"
+            style="@style/LoginPasswordEditTextStyle"
+            android:hint="Pin"
+            android:inputType="textPassword"
+            android:maxLength="12" />
+
+    </FrameLayout>
+
+    <!--<TextView
+        style="@style/ExtendedLoginFooterTextViewStyle"
+        android:layout_marginTop="@dimen/enterPinMarginBottom"
+        android:text="@string/verify_pin" />-->
+
+    <!--<include layout="@layout/pin_edittext_layout" />-->
+
+    <FrameLayout style="@style/ExtendedLoginIconAndEditTextFrameLayoutStyle">
+
+        <ImageView style="@style/PasswordIconStyle" />
+
+        <EditText
+            android:id="@+id/verify_pin_edittext"
+            style="@style/LoginPasswordEditTextStyle"
+            android:hint="Verify Pin"
+            android:inputType="textPassword"
+            android:maxLength="12" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/set_pin_button"
+        style="@style/LoginButtonStyle"
+        android:text="@string/set_pin" />
+
+</LinearLayout>

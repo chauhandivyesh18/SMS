@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_textview"
+            style="@style/ConfirmOrderTitleBarBackground"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/montserratregular"
+            android:gravity="center"
+            android:text="Details"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontLarge" />
+
+        <ImageView
+            android:id="@+id/close_imageview"
+            style="@style/ConfirmOrderTitleBarBackground"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_close" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        style="@style/ConfirmOrderBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/confirm_order_shadow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bought_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="Bought :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/bought_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sold_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="Sold :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/sold_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/net_quantity_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="Net Quantity :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/net_quantity_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/booked_pl_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="Booked PL :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/booked_pl_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mtm_pl_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="MTM PL :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/mtm_pl_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/current_rate_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="Current Rate :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/current_rate_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/exercise_quantity_textview"
+                    android:text="Exercise Quantity :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/exercise_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dexercise_quantity_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="DExercise Quantity :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/dexercise_quantity_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttons_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/square_off_button"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shadowbackgroundgreen"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="Square off"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fontMedium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@drawable/shadow_dialog" />-->
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout><!--
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDetails.OrderDetailsFragment">
+
+    <TextView
+        android:id="@+id/bought_textview"
+        style="@style/OrderDetailsTextView"
+        android:text="Bought :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bought_value"
+        style="@style/OrderDetailsValueTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="100" />
+
+    <TextView
+        android:id="@+id/sold_textview"
+        style="@style/OrderDetailsTextView"
+        android:text="Sold :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bought_textview" />
+
+    <TextView
+        android:id="@+id/sold_value"
+        style="@style/OrderDetailsValueTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bought_value"
+        tools:text="100" />
+
+    <TextView
+        android:id="@+id/net_quantity_textview"
+        style="@style/OrderDetailsTextView"
+        android:text="Net Quantity :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sold_textview" />
+
+    <TextView
+        android:id="@+id/net_quantity_value"
+        style="@style/OrderDetailsValueTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sold_value"
+        tools:text="100" />
+
+    <TextView
+        android:id="@+id/booked_pl_textview"
+        style="@style/OrderDetailsTextView"
+        android:text="Booked PL :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/net_quantity_textview" />
+
+    <TextView
+        android:id="@+id/booked_pl_value"
+        style="@style/OrderDetailsValueTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/net_quantity_value"
+        tools:text="100" />
+
+    <TextView
+        android:id="@+id/mtm_pl_textview"
+        style="@style/OrderDetailsTextView"
+        android:text="MTM PL :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/booked_pl_textview" />
+
+    <TextView
+        android:id="@+id/mtm_pl_value"
+        style="@style/OrderDetailsValueTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/booked_pl_value"
+        tools:text="100" />
+
+    <TextView
+        android:id="@+id/current_rate_textview"
+        style="@style/OrderDetailsTextView"
+        android:text="Current Rate :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtm_pl_textview" />
+
+    <TextView
+        android:id="@+id/current_rate_value"
+        style="@style/OrderDetailsValueTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mtm_pl_value"
+        tools:text="100" />
+
+    <TextView
+        android:id="@+id/exercise_quantity_textview"
+        style="@style/OrderDetailsTextView"
+        android:text="Exercise Quantity :"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_rate_textview" />
+
+    <TextView
+        android:id="@+id/exercise_value"
+        style="@style/OrderDetailsValueTextView"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_rate_value"
+        tools:text="100" />
+
+    <TextView
+        android:id="@+id/dexercise_quantity_textview"
+        style="@style/OrderDetailsTextView"
+        android:text="DExercise Quantity :"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exercise_quantity_textview" />
+
+    <TextView
+        android:id="@+id/dexercise_quantity_value"
+        style="@style/OrderDetailsValueTextView"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exercise_value"
+        tools:text="100" />
+
+    <Button
+        android:id="@+id/square_off_button"
+        style="@style/SettingsThemesButton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Square off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dexercise_quantity_textview" />
+
+</android.support.constraint.ConstraintLayout>-->

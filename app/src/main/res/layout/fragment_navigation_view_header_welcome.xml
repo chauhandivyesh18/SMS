@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    tools:context=".Dashboard.NavigationViewHeaderWelcomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/welcome_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/welcome"
+            android:fontFamily="@font/montserratregular"
+            style="@style/NavigationViewHeaderText"
+            android:textSize="@dimen/fontLarge" />
+
+        <TextView
+            android:id="@+id/username_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/welcome_textview"
+            android:text="Jon Snow!"
+            android:textAllCaps="true"
+            style="@style/NavigationViewHeaderText"
+            android:fontFamily="@font/montserratregular"
+            android:textSize="@dimen/fontLarge" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            style="@style/NavigationViewHeaderIcon"
+            app:srcCompat="@drawable/ic_bell"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/settings_imageview"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            style="@style/NavigationViewHeaderIcon"
+            app:srcCompat="@drawable/ic_settings" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/indian_rupee_imageview"
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            style="@style/NavigationViewHeaderIcon"
+            app:srcCompat="@drawable/ic_indian_rupee"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/total_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/indian_rupee_imageview"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:text="0.00 CR"
+            style="@style/NavigationViewHeaderText"
+            android:textSize="@dimen/fontLarge"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/add_icon_imageview"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/total_textview"
+            app:srcCompat="@drawable/ic_plus1"
+            android:visibility="gone"/>
+
+        <!--<ImageView
+            android:id="@+id/settings_imageview"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            style="@style/NavigationViewHeaderIcon"
+            app:srcCompat="@drawable/ic_settings" />-->
+
+    </RelativeLayout>
+
+</LinearLayout>

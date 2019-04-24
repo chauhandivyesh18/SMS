@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    tools:context=".Dashboard.NavigationViewHeaderLoginFragment">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:fontFamily="@font/montserratregular"
+        android:gravity="start|center_vertical"
+        android:text="@string/login_to_trade"
+        style="@style/NavigationViewHeaderText"
+        android:textSize="@dimen/fontLarge"
+        android:textStyle="bold" />
+
+    <Button
+        style="@style/OrangeButton"
+        android:layout_weight="1"
+        android:text="@string/login" />
+
+</LinearLayout>

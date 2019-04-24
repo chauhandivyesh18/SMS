@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.millionaires.sms.Splash.SplashActivity">
+
+    <ImageView
+        android:id="@+id/pure_logo_imageview"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/loggo"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/show_progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/message_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/opensansregular"
+            android:text="CONNECTING"
+            android:textColor="?attr/textColorWhite"
+            android:textSize="@dimen/fontMedium" />
+
+        <ProgressBar
+            android:id="@+id/pb"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_margin="20dp"
+            android:indeterminate="true"
+            android:max="100"
+            android:progress="0"
+            android:visibility="gone"/>
+
+       </LinearLayout>
+
+</FrameLayout>

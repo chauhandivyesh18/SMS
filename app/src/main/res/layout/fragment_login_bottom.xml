@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login.LoginFragments.LoginBottomFragment">
+
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        style="@style/FooterLayoutStyle"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/open_account_now_textview"
+            style="@style/LoginFooterTexViewStyle"
+            android:text="@string/openAccountNow" />
+
+        <View style="@style/ViewPipeStyle" />
+
+        <TextView
+            android:id="@+id/forgot_password_textview"
+            style="@style/LoginFooterTexViewStyle"
+            android:text="@string/forgotPassword" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/footer_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratultralight"
+        android:gravity="center"
+        android:text="@string/loginFooter"
+        android:textColor="?attr/textColorAccent"
+        android:textSize="@dimen/fontSmall" />
+
+</LinearLayout>

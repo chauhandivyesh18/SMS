@@ -1,0 +1,1021 @@
+<resources>
+
+    <style name="ApplicationTheme" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="colorPrimary">?attr/colorPrimary</item>
+    </style>
+
+    <style name="DarkBlueTheme" parent="ApplicationTheme">
+        <item name="colorPrimary">@color/colorPrimaryThemeDarkBlue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkThemeDarkBlue</item>
+        <item name="colorAccent">@color/colorAccentThemeDarkBlue</item>
+        <item name="activityBackground">@color/activityBackgroundThemeDarkBlue</item>
+        <item name="listItemDarkBackground">@color/listItemDarkBackgroundThemeDarkBlue</item>
+        <item name="listItemLightBackground">@color/listItemLightBackgroundThemeDarkBlue</item>
+        <item name="favouritesTitleBackground">@color/favouritesTitleBackgroundThemeDarkBlue</item>
+        <item name="confirmOrderTitleBackground">@color/confirmOrderTitleBackgroundThemeDarkBlue
+        </item>
+        <item name="confirmOrderBackground">@color/confirmOrderBackgroundThemeDarkBlue</item>
+        <item name="bottomNavigationIcon">@color/bottomNavigationIconThemeDarkBlue</item>
+        <item name="bottomNavigationText">@color/bottomNavigationTextThemeDarkBlue</item>
+        <item name="tabsMainBackground">@color/tabsMainBackgroundThemeDarkBlue</item>
+        <item name="tabsChildBackground">@color/tabsChildBackgroundThemeDarkBlue</item>
+        <item name="selectedItemBackground">@color/selectedItemBackgroundThemeDarkBlue</item>
+        <item name="selectedItemDropDown">@color/selectedItemDropDownBackgroundThemeDarkBlue</item>
+        <item name="textColorWhite">@color/textColorWhiteThemeDarkBlue</item>
+        <item name="textColorAccent">@color/textColorAccentThemeDarkBlue</item>
+        <item name="tabsSelectedTextColor">@color/tabsSelectedTextColorThemeDarkBlue</item>
+        <item name="niftySensexTextColor">@color/niftySensexTextColorThemeDarkBlue</item>
+        <item name="navigationViewCloseIconTint">@color/navigationViewCloseIconTintThemeDarkBlue
+        </item>
+        <item name="navigationViewBackground">@color/navigationViewBackgroundThemeDarkBlue</item>
+        <item name="navigationViewHeaderText">@color/navigationViewHeaderTextThemeDarkBlue</item>
+        <item name="navigationViewHeaderIcon">@color/navigationViewHeaderIconThemeDarkBlue</item>
+        <item name="navigationViewText">@color/navigationViewTextThemeDarkBlue</item>
+        <item name="navigationViewIcon">@color/navigationViewIconThemeDarkBlue</item>
+        <item name="navigationViewDivider">@color/navigationViewDividerThemeDarkBlue</item>
+        <item name="expandableViewChildListItemBackground">
+            @color/expandableViewChildListItemBackgroundThemeDarkBlue
+        </item>
+        <item name="buttonWhiteText">@color/buttonWhiteTextColorThemeDarkBlue</item>
+        <item name="buttonWarningBackground">@color/buttonWarningBackgroundThemeDarkBlue</item>
+        <item name="infoItemBell">@color/infoItemBellThemeDarkBlue</item>
+        <item name="infoItemBackground">@color/infoItemBackgroundThemeDarkBlue</item>
+        <item name="fragmentInfoOverviewBackground">
+            @color/fragmentInfoOverviewBackgroundThemeDarkBlue
+        </item>
+        <item name="otherBackground">@color/otherBackgroundThemeDarkBlue</item>
+        <item name="expandableViewChildListItemDivider">
+            @color/expandableViewChildListItemDividerThemeDarkBlue
+        </item>
+        <item name="logoTint">@color/logoTintThemeDarkBlue</item>spinnerDropDownBackground
+        <item name="spinnerDropDownBackground">@color/spinnerDropDownBackgroundThemeDarkBlue</item>
+        <item name="imageButtonBackground">@color/imageButtonBackgroundThemeDarkBlue</item>
+        <item name="imageButtonIconTint">@color/imageButtonIconTintThemeDarkBlue</item>
+        <item name="listItemDivider">@color/listItemDividerThemeDarkBlue</item>
+        <item name="switch_track">@color/switchTrackThemeDarkBlue</item>
+        <item name="switchLayoutBorder">@color/switchLayoutBorderThemeDarkBlue</item>
+        <item name="settingsThemeButtonSelected">@color/settingsThemeButtonSelectedThemeDarkBlue
+        </item>
+        <item name="settingsThemeButtonBackground">
+            @color/settingsThemeButtonBackgroundThemeDarkBlue
+        </item>
+        <item name="settingsThemeButtonTextColor">@color/settingsThemeButtonTextColorThemeDarkBlue
+        </item>
+        <item name="switchOn">@color/switchOnThemeDarkBlue</item>
+        <item name="switchOff">@color/switchOffThemeDarkBlue</item>
+    </style>
+
+    <style name="BlackTheme" parent="ApplicationTheme">
+        <item name="colorPrimary">@color/colorPrimaryThemeBlack</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkThemeBlack</item>
+        <item name="colorAccent">@color/colorAccentThemeBlack</item>
+        <item name="activityBackground">@color/activityBackgroundThemeBlack</item>
+        <item name="listItemDarkBackground">@color/listItemDarkBackgroundThemeBlack</item>
+        <item name="listItemLightBackground">@color/listItemLightBackgroundThemeBlack</item>
+        <item name="favouritesTitleBackground">@color/favouritesTitleBackgroundThemeBlack</item>
+        <item name="confirmOrderTitleBackground">@color/confirmOrderTitleBackgroundThemeBlack</item>
+        <item name="confirmOrderBackground">@color/confirmOrderBackgroundThemeBlack</item>
+        <item name="bottomNavigationIcon">@color/bottomNavigationIconThemeBlack</item>
+        <item name="bottomNavigationText">@color/bottomNavigationTextThemeBlack</item>
+        <item name="tabsMainBackground">@color/tabsMainBackgroundThemeBlack</item>
+        <item name="tabsChildBackground">@color/tabsChildBackgroundThemeBlack</item>
+        <item name="selectedItemBackground">@color/selectedItemBackgroundThemeBlack</item>
+        <item name="selectedItemDropDown">@color/selectedItemDropDownBackgroundThemeBlack</item>
+        <item name="textColorWhite">@color/textColorWhiteThemeBlack</item>
+        <item name="textColorAccent">@color/textColorAccentThemeBlack</item>
+        <item name="tabsSelectedTextColor">@color/tabsSelectedTextColorThemeBlack</item>
+        <item name="niftySensexTextColor">@color/niftySensexTextColorThemeBlack</item>
+        <item name="navigationViewCloseIconTint">@color/navigationViewCloseIconTintThemeBlack</item>
+        <item name="navigationViewBackground">@color/navigationViewBackgroundThemeBlack</item>
+        <item name="navigationViewHeaderText">@color/navigationViewHeaderTextThemeBlack</item>
+        <item name="navigationViewHeaderIcon">@color/navigationViewHeaderIconThemeBlack</item>
+        <item name="navigationViewText">@color/navigationViewTextThemeBlack</item>
+        <item name="navigationViewIcon">@color/navigationViewIconThemeBlack</item>
+        <item name="navigationViewDivider">@color/navigationViewDividerThemeBlack</item>
+        <item name="expandableViewChildListItemBackground">
+            @color/expandableViewChildListItemBackgroundThemeBlack
+        </item>
+        <item name="buttonWhiteText">@color/buttonWhiteTextColorThemeBlack</item>
+        <item name="buttonWarningBackground">@color/buttonWarningBackgroundThemeBlack</item>
+        <item name="infoItemBell">@color/infoItemBellThemeBlack</item>
+        <item name="infoItemBackground">@color/infoItemBackgroundThemeBlack</item>
+        <item name="fragmentInfoOverviewBackground">
+            @color/fragmentInfoOverviewBackgroundThemeBlack
+        </item>
+        <item name="otherBackground">@color/otherBackgroundThemeBlack</item>
+        <item name="expandableViewChildListItemDivider">
+            @color/expandableViewChildListItemDividerThemeBlack
+        </item>
+        <item name="logoTint">@color/logoTintThemeBlack</item>
+        <item name="spinnerDropDownBackground">@color/spinnerDropDownBackgroundThemeBlack</item>
+        <item name="imageButtonBackground">@color/imageButtonBackgroundThemeBlack</item>
+        <item name="imageButtonIconTint">@color/imageButtonIconTintThemeBlack</item>
+        <item name="listItemDivider">@color/listItemDividerThemeBlack</item>
+        <item name="switch_track">@color/switchTrackThemeBlack</item>
+        <item name="switchLayoutBorder">@color/switchLayoutBorderThemeBlack</item>
+        <item name="settingsThemeButtonSelected">@color/settingsThemeButtonSelectedThemeBlack</item>
+        <item name="settingsThemeButtonBackground">@color/settingsThemeButtonBackgroundThemeBlack
+        </item>
+        <item name="settingsThemeButtonTextColor">@color/settingsThemeButtonTextColorThemeBlack
+        </item>
+        <item name="switchOn">@color/switchOnThemeBlack</item>
+        <item name="switchOff">@color/switchOffThemeBlack</item>
+    </style>
+
+    <style name="WhiteTheme" parent="ApplicationTheme">
+        <item name="colorPrimary">@color/colorPrimaryThemeWhite</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkThemeWhite</item>
+        <item name="colorAccent">@color/colorAccentThemeWhite</item>
+        <item name="activityBackground">@color/activityBackgroundThemeWhite</item>
+        <item name="listItemDarkBackground">@color/listItemDarkBackgroundThemeWhite</item>
+        <item name="listItemLightBackground">@color/listItemLightBackgroundThemeWhite</item>
+        <item name="favouritesTitleBackground">@color/favouritesTitleBackgroundThemeWhite</item>
+        <item name="confirmOrderTitleBackground">@color/confirmOrderTitleBackgroundThemeWhite</item>
+        <item name="confirmOrderBackground">@color/confirmOrderBackgroundThemeWhite</item>
+        <item name="bottomNavigationIcon">@color/bottomNavigationIconThemeWhite</item>
+        <item name="bottomNavigationText">@color/bottomNavigationTextThemeWhite</item>
+        <item name="tabsMainBackground">@color/tabsMainBackgroundThemeWhite</item>
+        <item name="tabsChildBackground">@color/tabsChildBackgroundThemeWhite</item>
+        <item name="selectedItemBackground">@color/selectedItemBackgroundThemeWhite</item>
+        <item name="selectedItemDropDown">@color/selectedItemDropDownBackgroundThemeWhite</item>
+        <item name="textColorWhite">@color/textColorWhiteThemeWhite</item>
+        <item name="textColorAccent">@color/textColorAccentThemeWhite</item>
+        <item name="tabsSelectedTextColor">@color/tabsSelectedTextColorThemeWhite</item>
+        <item name="niftySensexTextColor">@color/niftySensexTextColorThemeWhite</item>
+        <item name="navigationViewCloseIconTint">@color/navigationViewCloseIconTintThemeWhite</item>
+        <item name="navigationViewBackground">@color/navigationViewBackgroundThemeWhite</item>
+        <item name="navigationViewHeaderText">@color/navigationViewHeaderTextThemeWhite</item>
+        <item name="navigationViewHeaderIcon">@color/navigationViewHeaderIconThemeWhite</item>
+        <item name="navigationViewText">@color/navigationViewTextThemeWhite</item>
+        <item name="navigationViewIcon">@color/navigationViewIconThemeWhite</item>
+        <item name="navigationViewDivider">@color/navigationViewDividerThemeWhite</item>
+        <item name="expandableViewChildListItemBackground">
+            @color/expandableViewChildListItemBackgroundThemeWhite
+        </item>
+        <item name="buttonWhiteText">@color/buttonWhiteTextColorThemeWhite</item>
+        <item name="buttonWarningBackground">@color/buttonWarningBackgroundThemeWhite</item>
+        <item name="infoItemBell">@color/infoItemBellThemeWhite</item>
+        <item name="infoItemBackground">@color/infoItemBackgroundThemeWhite</item>
+        <item name="fragmentInfoOverviewBackground">
+            @color/fragmentInfoOverviewBackgroundThemeWhite
+        </item>
+        <item name="otherBackground">@color/otherBackgroundThemeWhite</item>
+        <item name="expandableViewChildListItemDivider">
+            @color/expandableViewChildListItemDividerThemeWhite
+        </item>
+        <item name="logoTint">@color/logoTintThemeWhite</item>
+        <item name="spinnerDropDownBackground">@color/spinnerDropDownBackgroundThemeWhite</item>
+        <item name="imageButtonBackground">@color/imageButtonBackgroundThemeWhite</item>
+        <item name="imageButtonIconTint">@color/imageButtonIconTintThemeWhite</item>
+        <item name="listItemDivider">@color/listItemDividerThemeWhite</item>
+        <item name="switch_track">@color/switchTrackThemeWhite</item>
+        <item name="switchLayoutBorder">@color/switchLayoutBorderThemeWhite</item>
+        <item name="settingsThemeButtonSelected">@color/settingsThemeButtonSelectedThemeWhite</item>
+        <item name="settingsThemeButtonBackground">@color/settingsThemeButtonBackgroundThemeWhite
+        </item>
+        <item name="settingsThemeButtonTextColor">@color/settingsThemeButtonTextColorThemeWhite
+        </item>
+        <item name="switchOn">@color/switchOnThemeWhite</item>
+        <item name="switchOff">@color/switchOffThemeWhite</item>
+    </style>
+
+    <style name="ToolbarBAckground">
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="ActivityBackground">
+        <item name="android:background">?attr/activityBackground</item>
+    </style>
+
+    <style name="BottomNavigationBackground">
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="NavigationViewBackground">
+        <item name="android:background">?attr/navigationViewBackground</item>
+    </style>
+
+    <style name="ExpandableChildListItemBackground">
+        <item name="android:background">?attr/expandableViewChildListItemBackground</item>
+    </style>
+
+    <style name="NiftySensexTextView">
+        <item name="android:textColor">?attr/niftySensexTextColor</item>
+    </style>
+
+    <style name="NiftySensexPointsChangeTextView">
+        <item name="android:textColor">?attr/colorAccent</item>
+    </style>
+
+    <style name="ToolbarAppLogo">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:src">@drawable/ic_menu_nav</item>
+    </style>
+
+    <style name="ListItemDarkBackground">
+        <item name="android:background">?attr/listItemDarkBackground</item>
+    </style>
+
+    <style name="ListItemLightBackground">
+        <item name="android:background">?attr/listItemLightBackground</item>
+    </style>
+
+    <style name="BottomNavigationIconTint">
+        <item name="android:tint">?attr/bottomNavigationIcon</item>
+    </style>
+
+    <style name="BottomNavigationIconText">
+        <item name="android:textColor">?attr/bottomNavigationText</item>
+    </style>
+
+    <style name="FavouritesTitleBarBackground">
+        <item name="android:background">?attr/favouritesTitleBackground</item>
+    </style>
+
+    <style name="ConfirmOrderTitleBarBackground">
+        <item name="android:background">?attr/confirmOrderTitleBackground</item>
+    </style>
+
+    <style name="ConfirmOrderBackground">
+        <item name="android:background">?attr/confirmOrderBackground</item>
+    </style>
+
+    <style name="InfoItemBackground">
+        <item name="android:background">?attr/infoItemBackground</item>
+    </style>
+
+    <style name="OtherBackground">
+        <item name="android:background">?attr/otherBackground</item>
+    </style>
+
+    <style name="TitleText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/montserratregular</item>
+        <item name="android:textColor">?attr/textColorAccent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/fontLarge</item>
+    </style>
+
+    <style name="DividerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dp</item>
+        <item name="android:background">?attr/listItemDivider</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="NoAppBarTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>-->
+
+    <style name="AppLogo">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:src">@drawable/loggo</item>
+    </style>
+
+    <!--<style name="ExtendedAppLogo" parent="AppLogo">
+        <item name="android:layout_marginTop">@dimen/appLogoMarginTop</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>-->
+
+    <style name="LoginIconAndEditTextFrameLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:background">@drawable/edittextbackground</item>
+        <item name="android:paddingTop">@dimen/loginFrameLayoutPaddingTopBottom</item>
+        <item name="android:paddingBottom">@dimen/loginFrameLayoutPaddingTopBottom</item>
+        <item name="android:paddingStart">@dimen/loginFrameLayoutPaddingStartEnd</item>
+        <item name="android:paddingEnd">@dimen/loginFrameLayoutPaddingStartEnd</item>
+    </style>
+
+    <style name="ExtendedLoginIconAndEditTextFrameLayoutStyle" parent="LoginIconAndEditTextFrameLayoutStyle">
+        <item name="android:layout_marginTop">@dimen/frameMarginTop</item>
+    </style>
+
+    <style name="LoginEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:textColor">?attr/textColorAccent</item>
+        <item name="android:textColorHint">?attr/textColorAccent</item>
+        <item name="android:textSize">@dimen/fontMedium</item>
+        <item name="android:text"></item>
+        <item name="android:layout_marginStart">@dimen/edittextMarginStart</item>
+    </style>
+
+    <style name="LoginPasswordEditTextStyle" parent="LoginEditTextStyle">
+        <item name="android:password">true</item>
+    </style>
+
+    <style name="LoginIconStyle">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:tint">?attr/textColorAccent</item>
+    </style>
+
+    <style name="PasswordIconStyle" parent="LoginIconStyle">
+        <item name="android:src">@drawable/ic_lock</item>
+    </style>
+
+    <style name="IdIconStyle" parent="LoginIconStyle">
+        <item name="android:src">@drawable/ic_avatar</item>
+    </style>
+
+    <style name="DobIconStyle" parent="LoginIconStyle">
+        <item name="android:src">@drawable/ic_dob</item>
+    </style>
+
+    <style name="MobileIconStyle" parent="LoginIconStyle">
+        <item name="android:src">@drawable/ic_mobile</item>
+    </style>
+
+    <style name="LoginButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/buttonHeight</item>
+        <item name="android:background">@drawable/buttonbackground</item>
+        <item name="android:fontFamily">@font/montserratregular</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/fontLarge</item>
+        <item name="android:layout_marginTop">@dimen/buttonMarginTop</item>
+        <item name="android:letterSpacing">0.07</item>
+    </style>
+
+    <style name="LoginFooterTexViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:textColor">?attr/textColorAccent</item>
+        <item name="android:textSize">@dimen/fontMedium</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="ExtendedLoginFooterTextViewStyle" parent="LoginFooterTexViewStyle">
+        <item name="android:layout_marginBottom">@dimen/enterPinMarginBottom</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="ViewPipeStyle">
+        <item name="android:layout_width">@dimen/pipeWidth</item>
+        <item name="android:layout_height">@dimen/pipeHeight</item>
+        <item name="android:layout_marginEnd">@dimen/pipeMarginEnd</item>
+        <item name="android:layout_marginStart">@dimen/pipeMarginStart</item>
+        <item name="android:background">?attr/textColorAccent</item>
+    </style>
+
+    <style name="ChangePasswordGreetingsTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:textColor">?attr/textColorWhite</item>
+        <item name="android:textSize">@dimen/fontLarge</item>
+    </style>
+
+    <style name="FooterLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:layout_alignParentBottom">true</item>-->
+        <!--<item name="android:layout_marginBottom">@dimen/footerMarginBottom</item>-->
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="PinEditTextStyle">
+        <item name="android:layout_width">@dimen/pinEditTextWidthAndHeight</item>
+        <item name="android:layout_height">@dimen/pinEditTextWidthAndHeight</item>
+        <item name="android:background">@drawable/pinbackground</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?attr/textColorAccent</item>
+        <item name="android:textSize">@dimen/fontMedium</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:layout_marginStart">@dimen/pinBoxMarginStartEnd</item>
+        <item name="android:layout_marginEnd">@dimen/pinBoxMarginStartEnd</item>
+    </style>
+
+    <!--<style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>-->
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MainTabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyTabTextAppearance</item>
+        <item name="android:background">?attr/tabsMainBackground</item>
+    </style>
+
+    <style name="ChildTabLayout" parent="Base.Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyTabTextAppearance</item>
+        <item name="android:background">?attr/tabsChildBackground</item>
+    </style>
+
+    <style name="MyTabTextAppearance" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/fontSmall</item>
+    </style>
+
+    <style name="NavigationViewCloseIconTint">
+        <item name="android:tint">?attr/navigationViewCloseIconTint</item>
+    </style>
+
+    <style name="NavigationViewHeaderText">
+        <item name="android:textColor">?attr/navigationViewHeaderText</item>
+    </style>
+
+    <style name="NavigationViewHeaderIcon">
+        <item name="android:tint">?attr/navigationViewHeaderIcon</item>
+    </style>
+
+    <style name="NavigationViewDropDownIconTint">
+        <item name="android:tint">?attr/navigationViewIcon</item>
+    </style>
+
+    <style name="NavigationViewMenuTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">?attr/navigationViewText</item>
+        <item name="android:textSize">@dimen/fontLarge</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+    <style name="NavigationViewMenuLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">@dimen/navigationViewPaddingTopBottom</item>
+        <item name="android:paddingTop">@dimen/navigationViewPaddingTopBottom</item>
+        <item name="android:paddingStart">@dimen/navigationViewPaddingStartEnd</item>
+        <item name="android:paddingEnd">@dimen/navigationViewPaddingStartEnd</item>
+    </style>
+
+    <style name="ExpandableChildListItemDivider">
+        <item name="android:background">?attr/expandableViewChildListItemDivider</item>
+    </style>
+
+    <style name="NavigationViewDividers">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/navigationViewDividerHeight</item>
+        <item name="android:background">?attr/navigationViewDivider</item>
+    </style>
+
+    <style name="NavigationViewButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/fontLarge</item>
+        <item name="android:fontFamily">@font/opensansregular</item>
+        <item name="android:paddingTop">@dimen/buttonPaddingTopAndBottom</item>
+        <item name="android:paddingBottom">@dimen/buttonPaddingTopAndBottom</item>
+    </style>
+
+    <style name="OrangeButton" parent="NavigationViewButtonStyle">
+        <item name="android:background">@drawable/shadowbackgroundorange</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="WhiteButton" parent="NavigationViewButtonStyle">
+        <item name="android:background">@drawable/shadowbackgroundwhite</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="navigationIconStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">start</item>
+    </style>
+
+    <style name="BottomNavigationTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?attr/textColorAccent</item>
+        <item name="android:textSize">@dimen/fontExtraSmall</item>
+    </style>
+
+    <style name="LeftIndicatorStyle">
+        <item name="android:layout_width">6dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@color/colorGreen</item>
+    </style>
+
+    <style name="PrimaryTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:textSize">@dimen/fontMedium</item>
+        <item name="android:textColor">?attr/textColorWhite</item>
+    </style>
+
+    <style name="SecondaryDateAndSeriesTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:textSize">@dimen/fontSmall</item>
+        <item name="android:textColor">?attr/textColorAccent</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="SecondaryFirstTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:textSize">@dimen/fontExtraSmall</item>
+        <item name="android:textColor">?attr/textColorAccent</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="SecondaryTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:textSize">@dimen/fontExtraSmall</item>
+        <item name="android:textColor">?attr/textColorAccent</item>
+        <item name="android:layout_marginStart">6dp</item>
+    </style>
+
+    <style name="SecondaryValuesTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:textSize">@dimen/fontExtraSmall</item>
+        <item name="android:textColor">?attr/textColorWhite</item>
+        <item name="android:layout_marginStart">6dp</item>
+    </style>
+
+    <style name="ScheduleIconImageView">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:src">@drawable/ic_watch</item>
+        <item name="android:tint">?attr/textColorAccent</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="PipeTextView">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:background">?attr/textColorAccent</item>
+    </style>
+
+    <style name="PrimaryTextViewWithMarginEnd" parent="PrimaryTextView">
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+    <style name="ArrowIconImageView">
+        <item name="android:layout_width">12dp</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:src">@drawable/ic_up_arrow</item>
+    </style>
+
+    <style name="AddIconImageView">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:tint">@color/blueIconTint</item>
+        <item name="android:src">@drawable/ic_add</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="AddIconLayout">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">32dp</item>
+    </style>
+
+    <style name="ConstraintLayoutStyleForListItems">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:paddingStart">16dp</item>
+    </style>
+
+    <style name="SearchConstraintLayoutStyleForListItems" parent="OtherBackground">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:paddingStart">16dp</item>
+    </style>
+
+    <style name="SelectedItemDropDownBackground">
+        <item name="android:background">?attr/selectedItemDropDown</item>
+    </style>
+
+    <style name="ListItemTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">2dp</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:textSize">@dimen/fontSmall</item>
+    </style>
+
+    <style name="ListItemTextViewGreen" parent="ListItemTextView">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="ListItemTextViewOrange" parent="ListItemTextView">
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="ListItemTextViewWhite" parent="ListItemTextView">
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+
+    <style name="ListItemImageView">
+        <item name="android:layout_width">14dp</item>
+        <item name="android:layout_height">14dp</item>
+    </style>
+
+    <style name="ListItemImageViewGreen" parent="ListItemImageView">
+        <item name="android:tint">@color/colorWhite</item>
+    </style>
+
+    <style name="ListItemImageViewOrange" parent="ListItemImageView">
+        <item name="android:tint">@color/colorWhite</item>
+    </style>
+
+    <style name="ListItemImageViewWhite" parent="ListItemImageView">
+        <item name="android:tint">@color/colorOrange</item>
+    </style>
+
+    <style name="ListItemButtonLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+    <style name="CustomSpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/ic_baseline_expand_more_24px</item>
+    </style>
+
+    <style name="BottomNavigationImageButton">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:background">@drawable/roundbutton</item>
+        <item name="android:tint">@color/colorWhite</item>
+    </style>
+
+    <style name="BidAndAskTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserratregular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginStart">2dp</item>
+        <item name="android:textColor">@color/colorDark</item>
+        <item name="android:textSize">@dimen/fontMedium</item>
+    </style>
+
+    <style name="BidAndAskRatesTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/opensansregular</item>
+        <item name="android:textColor">@color/textColorGray</item>
+        <item name="android:textSize">@dimen/fontMedium</item>
+    </style>
+
+    <style name="RatesTitleTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/opensansregular</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:textColor">@color/textColorGray</item>
+        <item name="android:textSize">@dimen/fontSmall</item>
+    </style>
+
+    <style name="RatesTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/opensansregular</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textSize">@dimen/fontSmall</item>
+    </style>
+
+    <style name="RatesTextView2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/opensansregular</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textSize">@dimen/fontSmall</item>
+    </style>
+
+    <style name="BidAndAskDropDownTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/montserratregular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/switch_thumb</item>
+        <item name="android:textSize">@dimen/fontMedium</item>
+    </style>
+
+    <style name="QtyPriceTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/opensansregular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/textColorGray</item>
+        <item name="android:textSize">@dimen/fontExtraSmall</item>
+    </style>
+
+    <style name="QtyTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/opensansregular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/textColorGray</item>
+        <item name="android:textSize">@dimen/fontSmall</item>
+    </style>
+
+    <style name="PriceTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/opensansregular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorOrange</item>
+        <item name="android:textSize">@dimen/fontSmall</item>
+    </style>
+
+    <style name="LayoutOuter">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="LayoutInner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="SearchAllLayout">
+        <item name="android:background">?attr/otherBackground</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="SearchAllTitleTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:fontFamily">@font/montserratregular</item>
+        <item name="android:textColor">?attr/textColorWhite</item>
+        <item name="android:textSize">@dimen/fontLarge</item>
+    </style>
+
+    <style name="SearchAllForwardArrow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:tint">?attr/textColorWhite</item>
+        <item name="android:src">@drawable/ic_forward_arrow</item>
+    </style>
+
+    <style name="HourlyFragmentSummaryTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/montserratregular</item>
+        <item name="android:textColor">?attr/textColorAccent</item>
+        <item name="android:textSize">@dimen/fontLarge</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="HourlyFragmentHeadingTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:fontFamily">@font/montserratregular</item>
+        <item name="android:textColor">?attr/textColorAccent</item>
+        <item name="android:textSize">@dimen/fontLarge</item>
+    </style>
+
+    <style name="HourlyFragmentTitleTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:textColor">?attr/textColorWhite</item>
+        <item name="android:textSize">@dimen/fontSmall</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="HourlyFragmentTextView1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:textColor">?attr/textColorWhite</item>
+        <item name="android:textSize">@dimen/fontSmall</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="HourlyFragmentTextView2">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:textColor">?attr/textColorWhite</item>
+        <item name="android:textSize">@dimen/fontSmall</item>
+    </style>
+
+    <style name="SettingsLightTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:textColor">?attr/textColorAccent</item>
+        <item name="android:textSize">@dimen/fontMedium</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="SettingsRegularTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:fontFamily">@font/montserratregular</item>
+        <item name="android:textColor">?attr/textColorWhite</item>
+        <item name="android:textSize">@dimen/fontLarge</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="SwitchLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:background">@drawable/switch_rounded_corners</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">1.2dp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+
+    <style name="SwitchTextview">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:fontFamily">@font/opensansregular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/fontSmall</item>
+    </style>
+
+    <style name="SwitchOn" parent="SwitchTextview">
+        <item name="android:background">@drawable/switch_thumb</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="SwitchOff" parent="SwitchTextview">
+        <item name="android:background">@drawable/switch_track</item>
+        <item name="android:textColor">?attr/settingsThemeButtonTextColor</item>
+    </style>
+
+    <style name="BSENSESwitchTextview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/opensansregular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/fontExtraSmall</item>
+    </style>
+
+    <style name="On" parent="BSENSESwitchTextview">
+        <item name="android:background">@drawable/switch_thumb</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="Off" parent="BSENSESwitchTextview">
+        <item name="android:background">@drawable/switch_track</item>
+        <item name="android:textColor">@color/switch_thumb</item>
+    </style>
+
+    <style name="SettingsThemesButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:textSize">@dimen/fontSmall</item>
+        <item name="android:textColor">?attr/settingsThemeButtonTextColor</item>
+        <item name="android:background">?attr/settingsThemeButtonBackground</item>
+    </style>
+
+    <style name="SettingsConstraintLayoutStyle" parent="OtherBackground">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <style name="SettingsEdittextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@drawable/spinner_background</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:text">""</item>
+        <item name="android:ems">6</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:textColor">?attr/textColorWhite</item>
+        <item name="android:textSize">@dimen/fontMedium</item>
+    </style>
+
+    <style name="NoDataFoundTextview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:text">No data found</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/fontExtraLarge</item>
+    </style>
+
+    <style name="ShadowAbove">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">6dp</item>
+        <item name="android:background">@drawable/shadowabove</item>
+    </style>
+
+    <style name="ShadowBelow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">6dp</item>
+        <item name="android:background">@drawable/shadowbelow</item>
+    </style>
+
+    <style name="OrderDetailsTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:fontFamily">@font/opensansregular</item>
+        <item name="android:textColor">?attr/textColorWhite</item>
+        <item name="android:textSize">@dimen/fontLarge</item>
+    </style>
+
+    <style name="OrderDetailsValueTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:fontFamily">@font/opensansregular</item>
+        <item name="android:textColor">?attr/textColorWhite</item>
+        <item name="android:textSize">@dimen/fontLarge</item>
+    </style>
+
+    <style name="CustomDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorBlue</item>
+        <item name="android:background">?attr/activityBackground</item>
+        <item name="android:textColor">?attr/textColorWhite</item>
+        <item name="android:windowBackground">@color/colorTransparent</item>
+    </style>
+
+    <style name="ApplicationTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="ApplicationTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

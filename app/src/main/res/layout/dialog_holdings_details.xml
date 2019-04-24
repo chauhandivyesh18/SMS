@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_textview"
+            style="@style/ConfirmOrderTitleBarBackground"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/montserratregular"
+            android:gravity="center"
+            android:text="Details"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontLarge" />
+
+        <ImageView
+            android:id="@+id/close_imageview"
+            style="@style/ConfirmOrderTitleBarBackground"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_close" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        style="@style/ConfirmOrderBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/confirm_order_shadow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/total_qty_textview"
+                    android:text="Total Qty :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/total_qty_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/trade_qty_textview"
+                    android:text="Trade Qty :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/trade_qty_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/qty_to_sell_textview"
+                    android:text="Qty to Sell :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/qty_to_sell_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bpl_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/booked_pl_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="Booked PL :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/booked_pl_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mtm_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mtm_pl_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="MTM PL :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/mtm_pl_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/current_rate_textview"
+                    android:text="Current Rate :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/current_rate_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/exercise_quantity_textview"
+                    android:text="Exercise Quantity :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/exercise_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/dexercise_quantity_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="DExercise Quantity :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/dexercise_quantity_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttons_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/sell_off_button"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shadowbackgroundgreen"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="Sell off"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fontMedium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@drawable/shadow_dialog" />-->
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout><!--<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDetails.OrderDetailsFragment">
+
+    <TextView
+        android:id="@+id/total_qty_textview"
+        style="@style/OrderDetailsTextView"
+        android:text="Total Qty :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/total_qty_value"
+        style="@style/OrderDetailsValueTextView"
+        tools:text="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/trade_qty_textview"
+        style="@style/OrderDetailsTextView"
+        android:text="Trade Qty :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/total_qty_textview" />
+
+    <TextView
+        android:id="@+id/trade_qty_value"
+        style="@style/OrderDetailsValueTextView"
+        tools:text="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/total_qty_value" />
+
+    <TextView
+        android:id="@+id/qty_to_sell_textview"
+        style="@style/OrderDetailsTextView"
+        android:text="Qty to Sell :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/trade_qty_textview" />
+
+    <TextView
+        android:id="@+id/qty_to_sell_value"
+        style="@style/OrderDetailsValueTextView"
+        tools:text="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/trade_qty_value" />
+
+    <TextView
+        android:id="@+id/current_rate_textview"
+        style="@style/OrderDetailsTextView"
+        android:text="Current Rate :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/qty_to_sell_textview" />
+
+    <TextView
+        android:id="@+id/current_rate_value"
+        style="@style/OrderDetailsValueTextView"
+        tools:text="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/qty_to_sell_value" />
+
+    <Button
+        android:id="@+id/sell_off_button"
+        style="@style/SettingsThemesButton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Sell off"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_rate_textview"/>
+
+</android.support.constraint.ConstraintLayout>-->

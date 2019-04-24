@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/navigationViewPaddingTopBottom"
+    android:paddingTop="@dimen/navigationViewPaddingTopBottom"
+    android:paddingStart="@dimen/navigationViewPaddingStartEnd"
+    android:paddingEnd="@dimen/navigationViewPaddingStartEnd">
+
+    <ImageView
+        android:id="@+id/listTitleIcon"
+        style="@style/navigationIconStyle"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/listTitle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:text="Expend"
+        android:paddingStart="8dp"
+        android:gravity="center_vertical"
+        android:textColor="?attr/navigationViewText"
+        android:textSize="@dimen/fontLarge"
+        android:fontFamily="@font/montserratlight" />
+
+    <ImageView
+        android:id="@+id/expandIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/NavigationViewDropDownIconTint" />
+
+</LinearLayout>

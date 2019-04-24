@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Theme DarkBlue-->
+    <color name="colorPrimaryThemeDarkBlue">#090E18</color>
+    <color name="colorPrimaryDarkThemeDarkBlue">#090E18</color>
+    <color name="colorAccentThemeDarkBlue">#AFAFAF</color>
+
+    <color name="activityBackgroundThemeDarkBlue">@color/colorPrimaryThemeDarkBlue</color>
+    <color name="listItemDarkBackgroundThemeDarkBlue">#131D31</color>
+    <color name="listItemLightBackgroundThemeDarkBlue">@color/colorWhite</color>
+    <color name="favouritesTitleBackgroundThemeDarkBlue">@color/colorDark</color>
+    <color name="confirmOrderTitleBackgroundThemeDarkBlue">#121A2C</color>
+    <color name="confirmOrderBackgroundThemeDarkBlue">@color/colorDark</color>
+    <color name="bottomNavigationIconThemeDarkBlue">@color/colorWhite</color>
+    <color name="bottomNavigationTextThemeDarkBlue">@color/colorAccentThemeDarkBlue</color>
+    <color name="tabsMainBackgroundThemeDarkBlue">@color/colorPrimaryThemeDarkBlue</color>
+    <color name="tabsChildBackgroundThemeDarkBlue">@color/colorDark</color>
+    <color name="otherBackgroundThemeDarkBlue">@color/listItemDarkBackgroundThemeDarkBlue</color>
+
+    <color name="selectedItemBackgroundThemeDarkBlue">@color/colorPrimaryThemeDarkBlue</color>
+    <color name="selectedItemDropDownBackgroundThemeDarkBlue">#F1F1F1</color>
+
+    <color name="textColorWhiteThemeDarkBlue">@color/colorWhite</color>
+    <color name="textColorAccentThemeDarkBlue">@color/colorAccentThemeDarkBlue</color>
+    <color name="tabsSelectedTextColorThemeDarkBlue">@color/colorWhite</color>
+    <color name="niftySensexTextColorThemeDarkBlue">@color/colorWhite</color>
+
+    <color name="navigationViewCloseIconTintThemeDarkBlue">#555862</color>
+    <color name="navigationViewBackgroundThemeDarkBlue">#F1F1F1</color>
+    <color name="navigationViewHeaderTextThemeDarkBlue">#555862</color>
+    <color name="navigationViewHeaderIconThemeDarkBlue">#555862</color>
+    <color name="navigationViewTextThemeDarkBlue">#828282</color>
+    <color name="navigationViewIconThemeDarkBlue">#B2B2B2</color>
+    <color name="navigationViewDividerThemeDarkBlue">#707070</color>
+    <color name="expandableViewChildListItemBackgroundThemeDarkBlue">@color/colorWhite</color>
+    <color name="expandableViewChildListItemDividerThemeDarkBlue">@color/colorWhite</color>
+
+    <color name="buttonWhiteTextColorThemeDarkBlue">@color/colorDark</color>
+    <color name="buttonWarningBackgroundThemeDarkBlue">@color/colorDark</color>
+    <color name="infoItemBellThemeDarkBlue">@color/colorWhite</color>
+    <color name="infoItemBackgroundThemeDarkBlue">@color/colorPrimaryThemeDarkBlue</color>
+    <color name="fragmentInfoOverviewBackgroundThemeDarkBlue">@color/colorTransparent</color>
+    <color name="logoTintThemeDarkBlue">@color/colorTransparent</color>
+    <color name="spinnerDropDownBackgroundThemeDarkBlue">@color/colorPrimaryDarkThemeDarkBlue</color>
+    <color name="imageButtonBackgroundThemeDarkBlue">@color/colorLight</color>
+    <color name="imageButtonIconTintThemeDarkBlue">@color/colorDark</color>
+    <color name="listItemDividerThemeDarkBlue">@color/colorBlack</color>
+    <color name="switchTrackThemeDarkBlue">@color/colorLight</color>
+    <color name="switchLayoutBorderThemeDarkBlue">@color/colorTransparent</color>
+    <color name="settingsThemeButtonSelectedThemeDarkBlue">@color/colorOrange</color>
+    <color name="settingsThemeButtonBackgroundThemeDarkBlue">@color/colorLight</color>
+    <color name="settingsThemeButtonTextColorThemeDarkBlue">@color/colorDark</color>
+    <color name="switchOnThemeDarkBlue">@color/otherBackgroundThemeDarkBlue</color>
+    <color name="switchOffThemeDarkBlue">@color/colorLight</color>
+
+    <!--Theme Black-->
+    <color name="colorPrimaryThemeBlack">#101011</color>
+    <color name="colorPrimaryDarkThemeBlack">#101011</color>
+    <color name="colorAccentThemeBlack">#AFAFAF</color>
+
+    <color name="activityBackgroundThemeBlack">#3B3B3B</color>
+    <color name="listItemDarkBackgroundThemeBlack">@color/activityBackgroundThemeBlack</color>
+    <color name="listItemLightBackgroundThemeBlack">@color/colorWhite</color>
+    <color name="favouritesTitleBackgroundThemeBlack">@color/colorOrange</color>
+    <color name="confirmOrderTitleBackgroundThemeBlack">@color/colorPrimaryThemeBlack</color>
+    <color name="confirmOrderBackgroundThemeBlack">#3B3B3B</color>
+    <color name="bottomNavigationIconThemeBlack">@color/colorWhite</color>
+    <color name="bottomNavigationTextThemeBlack">@color/colorAccentThemeBlack</color>
+    <color name="tabsMainBackgroundThemeBlack">@color/colorPrimaryThemeBlack</color>
+    <color name="tabsChildBackgroundThemeBlack">@color/colorDark</color>
+    <color name="otherBackgroundThemeBlack">@color/colorPrimaryThemeBlack</color>
+
+    <color name="selectedItemBackgroundThemeBlack">@color/colorPrimaryThemeBlack</color>
+    <color name="selectedItemDropDownBackgroundThemeBlack">#D8D8D8</color>
+
+    <color name="textColorWhiteThemeBlack">@color/colorWhite</color>
+    <color name="textColorAccentThemeBlack">@color/colorAccentThemeBlack</color>
+    <color name="tabsSelectedTextColorThemeBlack">@color/colorWhite</color>
+    <color name="niftySensexTextColorThemeBlack">@color/colorWhite</color>
+
+    <color name="navigationViewCloseIconTintThemeBlack">#555862</color>
+    <color name="navigationViewBackgroundThemeBlack">#F1F1F1</color>
+    <color name="navigationViewHeaderTextThemeBlack">#555862</color>
+    <color name="navigationViewHeaderIconThemeBlack">#555862</color>
+    <color name="navigationViewTextThemeBlack">#828282</color>
+    <color name="navigationViewIconThemeBlack">#B2B2B2</color>
+    <color name="navigationViewDividerThemeBlack">#707070</color>
+    <color name="expandableViewChildListItemBackgroundThemeBlack">@color/colorWhite</color>
+    <color name="expandableViewChildListItemDividerThemeBlack">@color/colorWhite</color>
+
+    <color name="buttonWhiteTextColorThemeBlack">@color/colorPrimaryThemeBlack</color>
+    <color name="buttonWarningBackgroundThemeBlack">@color/colorPrimaryThemeBlack</color>
+    <color name="infoItemBellThemeBlack">@color/colorWhite</color>
+    <color name="infoItemBackgroundThemeBlack">@color/colorPrimaryThemeBlack</color>
+    <color name="fragmentInfoOverviewBackgroundThemeBlack">@color/colorTransparent</color>
+    <color name="logoTintThemeBlack">@color/colorTransparent</color>
+    <color name="spinnerDropDownBackgroundThemeBlack">@color/colorPrimaryDarkThemeBlack</color>
+    <color name="imageButtonBackgroundThemeBlack">@color/colorLight</color>
+    <color name="imageButtonIconTintThemeBlack">@color/colorDark</color>
+    <color name="listItemDividerThemeBlack">@color/colorBlack</color>
+    <color name="switchTrackThemeBlack">@color/colorLight</color>
+    <color name="switchLayoutBorderThemeBlack">@color/colorTransparent</color>
+    <color name="settingsThemeButtonSelectedThemeBlack">@color/colorOrange</color>
+    <color name="settingsThemeButtonBackgroundThemeBlack">@color/colorLight</color>
+    <color name="settingsThemeButtonTextColorThemeBlack">@color/otherBackgroundThemeBlack</color>
+    <color name="switchOnThemeBlack">@color/otherBackgroundThemeBlack</color>
+    <color name="switchOffThemeBlack">@color/colorLight</color>
+
+    <!--Theme White-->
+    <color name="colorPrimaryThemeWhite">#2cad91</color>
+    <color name="colorPrimaryDarkThemeWhite">#007d64</color>
+    <color name="colorAccentThemeWhite">#5c6966</color>
+
+    <color name="activityBackgroundThemeWhite">#FFFFFF</color>
+    <color name="listItemDarkBackgroundThemeWhite">@color/activityBackgroundThemeWhite</color>
+    <color name="listItemLightBackgroundThemeWhite">#E3E3E3</color>
+    <color name="favouritesTitleBackgroundThemeWhite">@color/colorBlue</color>
+    <color name="confirmOrderTitleBackgroundThemeWhite">@color/colorBlue</color>
+    <color name="confirmOrderBackgroundThemeWhite">#E3E3E3</color>
+    <color name="bottomNavigationIconThemeWhite">@color/colorDark</color>
+    <color name="bottomNavigationTextThemeWhite">#3B3B3B</color>
+    <color name="tabsMainBackgroundThemeWhite">@color/colorPrimaryThemeWhite</color>
+    <color name="tabsChildBackgroundThemeWhite">@color/colorDark</color>
+    <color name="otherBackgroundThemeWhite">@color/colorPrimaryThemeWhite</color>
+
+    <color name="selectedItemBackgroundThemeWhite">@color/colorPrimaryThemeWhite</color>
+    <color name="selectedItemDropDownBackgroundThemeWhite">#E3E3E3</color>
+
+    <color name="textColorWhiteThemeWhite">@color/colorDark</color>
+    <color name="textColorAccentThemeWhite">@color/colorAccentThemeWhite</color>
+    <color name="tabsSelectedTextColorThemeWhite">@color/colorDark</color>
+    <color name="niftySensexTextColorThemeWhite">@color/colorDark</color>
+
+    <color name="navigationViewCloseIconTintThemeWhite">#E3E3E3</color>
+    <color name="navigationViewBackgroundThemeWhite">@color/colorWhite</color>
+    <color name="navigationViewHeaderTextThemeWhite">#939393</color>
+    <color name="navigationViewHeaderIconThemeWhite">@color/colorWhite</color>
+    <color name="navigationViewTextThemeWhite">#3B3B3B</color>
+    <color name="navigationViewIconThemeWhite">#939393</color>
+    <color name="navigationViewDividerThemeWhite">#3B3B3B</color>
+    <color name="expandableViewChildListItemBackgroundThemeWhite">@color/colorWhite</color>
+    <color name="expandableViewChildListItemDividerThemeWhite">@color/colorWhite</color>
+
+    <color name="buttonWhiteTextColorThemeWhite">@color/colorDark</color>
+    <color name="buttonWarningBackgroundThemeWhite">@color/colorDark</color>
+    <color name="infoItemBellThemeWhite">@color/textColorDarkStart</color>
+    <color name="infoItemBackgroundThemeWhite">@color/colorPrimaryThemeWhite</color>
+    <color name="fragmentInfoOverviewBackgroundThemeWhite">@color/colorPrimaryDarkThemeDarkBlue</color>
+    <color name="logoTintThemeWhite">@color/colorDark</color>
+    <color name="spinnerDropDownBackgroundThemeWhite">@color/colorDark</color>
+    <color name="imageButtonBackgroundThemeWhite">@color/colorDark</color>
+    <color name="imageButtonIconTintThemeWhite">@color/colorWhite</color>
+    <color name="listItemDividerThemeWhite">@color/colorGray</color>
+    <color name="switchTrackThemeWhite">@color/colorPrimaryDarkThemeWhite</color>
+    <color name="switchLayoutBorderThemeWhite">@color/colorDark</color>
+    <color name="settingsThemeButtonSelectedThemeWhite">@color/colorBlue</color>
+    <color name="settingsThemeButtonBackgroundThemeWhite">@color/listItemLightBackgroundThemeWhite</color>
+    <color name="settingsThemeButtonTextColorThemeWhite">@color/colorDark</color>
+    <color name="switchOnThemeWhite">@color/colorBlue</color>
+    <color name="switchOffThemeWhite">@color/listItemLightBackgroundThemeWhite</color>
+
+    <!--Other Colors-->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGreen">#39B65F</color>
+    <color name="colorOrange">#F58345</color>
+    <color name="colorDark">#1E2E4C</color>
+    <color name="colorLight">#C7C7C7</color>
+    <color name="colorGray">@android:color/darker_gray</color>
+    <color name="colorTransparent">@android:color/transparent</color>
+    <color name="colorBlue">#28BCEE</color>
+
+    <color name="tabsTextColor">#8F8F8F</color>
+    <color name="textColorDarkStart">#132361</color>
+    <color name="textColorDarkEnd">@color/colorDark</color>
+
+    <color name="buttonOrange">@color/colorOrange</color>
+    <color name="buttonGreen">@color/colorGreen</color>
+    <color name="buttonWhite">@color/colorWhite</color>
+    <color name="buttonDark">@color/colorDark</color>
+    <color name="buttonOrangeTextColor">@color/colorWhite</color>
+    <color name="buttonGreenTextColor">@color/colorWhite</color>
+    <color name="buttonDarkTextColor">@color/colorWhite</color>
+    <color name="buttonWhiteTextColor">@color/colorOrange</color>
+    <color name="textColorGray">#8F8F8F</color>
+
+    <color name="trashIconBackground">#F54B45</color>
+    <color name="blueIconTint">@color/colorBlue</color>
+
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+
+
+    <!--<color name="switch_track">#color/colorLight</color>-->
+    <color name="switch_thumb">@color/colorDark</color>
+    <color name="spinnerListItemBackground">#0D1421</color>
+    <color name="dividerColor">#707070</color>
+    <color name="positionsEditTextColor">#E1E1E1</color>
+    <color name="infoOverview">#EEEEEE</color>
+    <color name="disabled">#505D4037</color>
+
+
+
+</resources>

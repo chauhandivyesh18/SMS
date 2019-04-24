@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_textview"
+            style="@style/ConfirmOrderTitleBarBackground"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/montserratregular"
+            android:gravity="center"
+            tools:text="Details"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontLarge" />
+
+        <ImageView
+            android:id="@+id/close_imageview"
+            style="@style/ConfirmOrderTitleBarBackground"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_close" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        style="@style/ConfirmOrderBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/confirm_order_shadow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/msg_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratregular"
+                android:gravity="center"
+                android:textColor="?attr/textColorWhite"
+                android:textSize="@dimen/fontMedium"
+                tools:text="You have been logged out successfully." />
+
+            <LinearLayout
+                android:id="@+id/buttons_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shadowbackgroundgreen"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="Cancel"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/ok_button"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shadowbackgroundgreen"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="OK"
+                    android:visibility="gone"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fontMedium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

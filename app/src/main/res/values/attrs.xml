@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ThemeColors">
+        <attr name="activityBackground" format="color" />
+        <attr name="listItemDarkBackground" format="color" />
+        <attr name="listItemLightBackground" format="color" />
+        <attr name="favouritesTitleBackground" format="color" />
+        <attr name="confirmOrderTitleBackground" format="color" />
+        <attr name="confirmOrderBackground" format="color" />
+        <attr name="bottomNavigationIcon" format="color" />
+        <attr name="bottomNavigationText" format="color" />
+        <attr name="selectedItemBackground" format="color" />
+        <attr name="selectedItemDropDown" format="color" />
+        <attr name="textColorWhite" format="color" />
+        <attr name="textColorAccent" format="color" />
+        <attr name="tabsSelectedTextColor" format="color" />
+        <attr name="niftySensexTextColor" format="color" />
+        <attr name="navigationViewCloseIconTint" format="color" />
+        <attr name="navigationViewBackground" format="color" />
+        <attr name="navigationViewHeaderText" format="color" />
+        <attr name="navigationViewHeaderIcon" format="color" />
+        <attr name="navigationViewText" format="color" />
+        <attr name="navigationViewIcon" format="color" />
+        <attr name="navigationViewDivider" format="color" />
+        <attr name="expandableViewChildListItemBackground" format="color" />
+        <attr name="buttonWhiteText" format="color" />
+        <attr name="buttonWarningBackground" format="color" />
+        <attr name="tabsMainBackground" format="color" />
+        <attr name="tabsChildBackground" format="color" />
+        <attr name="infoItemBell" format="color" />
+        <attr name="infoItemBackground" format="color" />
+        <attr name="fragmentInfoOverviewBackground" format="color" />
+        <attr name="switch_track" format="color" />
+        <attr name="switch_thumb" format="color" />
+        <attr name="otherBackground" format="color" />
+        <attr name="expandableViewChildListItemDivider" format="color" />
+        <attr name="logoTint" format="color" />
+        <attr name="spinnerDropDownBackground" format="color" />
+        <attr name="imageButtonBackground" format="color" />
+        <attr name="imageButtonIconTint" format="color" />
+        <attr name="listItemDivider" format="color" />
+        <attr name="switchLayoutBorder" format="color" />
+        <attr name="settingsThemeButtonSelected" format="color" />
+        <attr name="settingsThemeButtonBackground" format="color" />
+        <attr name="settingsThemeButtonTextColor" format="color" />
+        <attr name="switchOn" format="color" />
+        <attr name="switchOff" format="color" />
+
+        <!--Common-->
+        <attr name="tabsTextColor" format="color" />
+        <attr name="textColorDarkStart" format="color" />
+        <attr name="textColorDarkEnd" format="color" />
+        <attr name="buttonOrange" format="color" />
+        <attr name="buttonGreen" format="color" />
+        <attr name="buttonWhite" format="color" />
+        <attr name="buttonDark" format="color" />
+        <attr name="buttonOrangeTextColor" format="color" />
+        <attr name="buttonGreenTextColor" format="color" />
+        <attr name="buttonWhiteTextColor" format="color" />
+        <attr name="buttonDarkTextColor" format="color" />
+
+        <attr name="trashIconBackground" format="color" />
+        <attr name="iconsColor" format="color" />
+
+        <attr name="windowActionBarPresent" format="boolean" />
+        <attr name="windowTitleAbsent" format="boolean" />
+    </declare-styleable>
+
+    <array name="circularprogressbar">
+        <item>@color/blueIconTint</item>
+    </array>
+</resources>

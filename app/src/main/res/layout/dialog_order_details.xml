@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_textview"
+            style="@style/ConfirmOrderTitleBarBackground"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/montserratregular"
+            android:gravity="center"
+            android:text="Details"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontLarge" />
+
+        <ImageView
+            android:id="@+id/close_imageview"
+            style="@style/ConfirmOrderTitleBarBackground"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_close" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        style="@style/ConfirmOrderBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/confirm_order_shadow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/order_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="Order Quantity :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/order_quantity_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/traded_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="Traded Quantity :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/traded_quantity_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/br_order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="Br. Order ID :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/br_order_id_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/current_ex_order_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="Current Ex. Order ID :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/current_ex_order_id_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/date_and_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="Date And Time :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/date_and_time_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/order_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="Order Type :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/order_type_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttons_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/modify_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/shadowbackgroundgreen"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="Modify"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fontMedium" />
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/shadowbackgroundgreen"
+                    android:fontFamily="@font/montserratregular"
+                    android:text="Cancel"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/fontMedium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@drawable/shadow_dialog" />-->
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout><!--
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDetails.OrderDetailsFragment">
+
+    <TextView
+        android:id="@+id/order_quantity"
+        style="@style/OrderDetailsTextView"
+        android:text="Order Quantity :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/order_quantity_value"
+        style="@style/OrderDetailsValueTextView"
+        tools:text="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/traded_quantity"
+        style="@style/OrderDetailsTextView"
+        android:text="Traded Quantity :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/order_quantity" />
+
+    <TextView
+        android:id="@+id/traded_quantity_value"
+        style="@style/OrderDetailsValueTextView"
+        tools:text="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/order_quantity_value" />
+
+    <TextView
+        android:id="@+id/br_order_id"
+        style="@style/OrderDetailsTextView"
+        android:text="Br. Order ID :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/traded_quantity" />
+
+    <TextView
+        android:id="@+id/br_order_id_value"
+        style="@style/OrderDetailsValueTextView"
+        tools:text="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/traded_quantity_value" />
+
+    <TextView
+        android:id="@+id/current_ex_order_id"
+        style="@style/OrderDetailsTextView"
+        android:text="Current Ex. Order ID :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/br_order_id" />
+
+    <TextView
+        android:id="@+id/current_ex_order_id_value"
+        style="@style/OrderDetailsValueTextView"
+        tools:text="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/br_order_id_value" />
+
+    <TextView
+        android:id="@+id/date_and_time"
+        style="@style/OrderDetailsTextView"
+        android:text="Date And Time :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_ex_order_id" />
+
+    <TextView
+        android:id="@+id/date_and_time_value"
+        style="@style/OrderDetailsValueTextView"
+        tools:text="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_ex_order_id_value" />
+
+    <TextView
+        android:id="@+id/order_type"
+        style="@style/OrderDetailsTextView"
+        android:text="Order Type :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_and_time" />
+
+    <TextView
+        android:id="@+id/order_type_value"
+        style="@style/OrderDetailsValueTextView"
+        tools:text="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_and_time_value" />
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/order_type"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/modify_button"
+            style="@style/SettingsThemesButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Modify" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="@style/SettingsThemesButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="Cancel" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>-->

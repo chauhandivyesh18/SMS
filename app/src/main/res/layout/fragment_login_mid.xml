@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Login.LoginFragments.LoginMidFragment">
+
+    <FrameLayout style="@style/LoginIconAndEditTextFrameLayoutStyle">
+
+        <ImageView
+            style="@style/IdIconStyle" />
+
+        <EditText
+            android:id="@+id/clientid_edittext"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+            android:maxLength="25"
+            style="@style/LoginEditTextStyle"
+            android:hint="@string/usernames" />
+
+    </FrameLayout>
+
+   <!-- <FrameLayout style="@style/ExtendedLoginIconAndEditTextFrameLayoutStyle">
+
+        <ImageView
+            style="@style/DobIconStyle" />
+
+        <EditText
+            android:id="@+id/dob_edittext"
+            android:inputType="date"
+            android:maxLength="10"
+            style="@style/LoginEditTextStyle"
+            android:hint="@string/dob" />
+
+    </FrameLayout>-->
+
+    <FrameLayout style="@style/ExtendedLoginIconAndEditTextFrameLayoutStyle">
+
+        <ImageView
+            style="@style/PasswordIconStyle"
+            />
+
+        <EditText
+            android:id="@+id/password_edittext"
+            android:maxLength="12"
+            android:inputType="textPassword"
+            style="@style/LoginPasswordEditTextStyle"
+            android:hint="@string/password" />
+
+    </FrameLayout>
+
+    <!--<TextView
+        android:id="@+id/forgot_password_textview"
+        style="@style/LoginFooterTexViewStyle"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/forgotPassword" />-->
+
+    <Button
+        android:id="@+id/login_button"
+        style="@style/LoginButtonStyle"
+        android:text="@string/login" />
+
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        style="@style/FooterLayoutStyle"
+        android:layout_marginTop="25dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/LoginFooterTexViewStyle"
+            android:text="Don't have an account? " />
+
+        <TextView
+            android:id="@+id/login_as_guest_textview"
+            style="@style/LoginFooterTexViewStyle"
+            android:text="@string/loginAsGuest" />
+
+    </LinearLayout>
+
+</LinearLayout>

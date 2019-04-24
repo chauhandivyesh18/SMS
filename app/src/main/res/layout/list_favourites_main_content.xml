@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ListItemLightBackground"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:showIn="@layout/list_item_favourites">
+
+    <TextView
+        android:id="@+id/indicator_textview"
+        style="@style/LeftIndicatorStyle" />
+
+    <android.support.constraint.ConstraintLayout
+        style="@style/ConstraintLayoutStyleForListItems"
+        android:layout_width="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/cname_textview"
+            style="@style/PrimaryTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Synergy Bizcon"
+            android:textColor="@color/colorDark" />
+
+        <TextView
+            android:id="@+id/date_and_series_textview"
+            style="@style/SecondaryDateAndSeriesTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cname_textview"
+            tools:text="16 Aug 2018 CE 2150.00"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/schedule_icon_imageview"
+            style="@style/ScheduleIconImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/date_and_series_textview" />
+
+        <TextView
+            android:id="@+id/date_time_textview"
+            style="@style/SecondaryTextView"
+            app:layout_constraintBottom_toBottomOf="@id/schedule_icon_imageview"
+            app:layout_constraintStart_toEndOf="@id/schedule_icon_imageview"
+            app:layout_constraintTop_toTopOf="@id/schedule_icon_imageview"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/pipe_textview"
+            style="@style/PipeTextView"
+            app:layout_constraintBottom_toBottomOf="@id/date_time_textview"
+            app:layout_constraintStart_toEndOf="@id/date_time_textview"
+            app:layout_constraintTop_toTopOf="@id/date_time_textview" />
+
+        <TextView
+            android:id="@+id/exchange_type_textview"
+            style="@style/SecondaryTextView"
+            app:layout_constraintBottom_toBottomOf="@id/pipe_textview"
+            app:layout_constraintStart_toEndOf="@id/pipe_textview"
+            app:layout_constraintTop_toTopOf="@id/pipe_textview"
+            tools:text="BSE" />
+
+        <ImageView
+            android:id="@+id/arrow_icon_imageview"
+            style="@style/ArrowIconImageView"
+            app:layout_constraintBottom_toBottomOf="@id/points_textview"
+            app:layout_constraintEnd_toStartOf="@id/points_textview"
+            app:layout_constraintTop_toTopOf="@id/points_textview"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/points_textview"
+            style="@style/PrimaryTextViewWithMarginEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="-"
+            android:textColor="@color/colorDark" />
+
+        <TextView
+            android:id="@+id/points_change_textview"
+            style="@style/SecondaryFirstTextView"
+            app:layout_constraintEnd_toEndOf="@id/points_textview"
+            app:layout_constraintTop_toBottomOf="@id/points_textview"
+            android:text="-" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

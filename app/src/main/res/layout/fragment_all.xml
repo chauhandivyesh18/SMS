@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Search.AllFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp">
+
+        <!--<TextView
+            android:id="@+id/no_data_found_textview"
+            style="@style/NoDataFoundTextview"
+            android:visibility="visible"/>-->
+
+        <LinearLayout
+            android:id="@+id/equity_search_layout"
+            style="@style/SearchAllLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/SearchAllTitleTextView"
+                android:text="@string/equity" />
+
+            <View style="@style/DividerStyle" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/equity_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <ImageView
+                android:id="@+id/equity_forward_arrow"
+                style="@style/SearchAllForwardArrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/futures_search_layout"
+            style="@style/SearchAllLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/equity_search_layout"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/SearchAllTitleTextView"
+                android:text="@string/futures" />
+
+            <View style="@style/DividerStyle" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/futures_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <ImageView
+                android:id="@+id/futures_forward_arrow"
+                style="@style/SearchAllForwardArrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/options_search_layout"
+            style="@style/SearchAllLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/futures_search_layout"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/SearchAllTitleTextView"
+                android:text="@string/options" />
+
+            <View style="@style/DividerStyle" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/options_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <ImageView
+                android:id="@+id/options_forward_arrow"
+                style="@style/SearchAllForwardArrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/currency_search_layout"
+            style="@style/SearchAllLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/options_search_layout"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/SearchAllTitleTextView"
+                android:text="@string/currency" />
+
+            <View style="@style/DividerStyle" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/currency_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <ImageView
+                android:id="@+id/currency_forward_arrow"
+                style="@style/SearchAllForwardArrow" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            style="@style/SearchAllLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/SearchAllTitleTextView"
+                android:text="@string/funds" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorBlack" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/funds_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView style="@style/SearchAllForwardArrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/SearchAllLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/SearchAllTitleTextView"
+                android:text="@string/forum" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorBlack" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/forum_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView style="@style/SearchAllForwardArrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/SearchAllLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/SearchAllTitleTextView"
+                android:text="@string/blogs" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorBlack" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/blogs_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView style="@style/SearchAllForwardArrow" />
+
+        </LinearLayout>-->
+
+    </RelativeLayout>
+
+</ScrollView>

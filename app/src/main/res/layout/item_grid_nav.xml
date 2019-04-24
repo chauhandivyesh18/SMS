@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/android_custom_gridview_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/technical_textview_custom_shape">
+
+
+        <ImageView
+            android:id="@+id/gridview_img"
+            style="@style/BottomNavigationIconTint"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_portfolio" />
+
+        <TextView
+            android:id="@+id/gridview_text"
+            style="@style/BottomNavigationIconText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratregular"
+            android:gravity="center"
+            android:text="Home"
+            android:layout_marginTop="2dp"
+            android:textSize="11dp" />
+
+
+</LinearLayout>

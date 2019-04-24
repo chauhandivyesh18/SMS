@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    style="@style/ActivityBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        style="@style/NavigationViewBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="32dp">
+
+                <ImageView
+                    android:id="@+id/close_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:tint="?attr/navigationViewCloseIconTint"
+                    app:srcCompat="@drawable/ic_close" />
+
+                <FrameLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View style="@style/NavigationViewDividers" />
+
+                <TextView
+                    android:id="@+id/home_textview"
+                    style="@style/NavigationViewMenuTextView"
+                    android:drawableStart="@drawable/ic_home"
+                    android:text="Home" />
+
+                <View style="@style/NavigationViewDividers" />
+
+                <TextView
+                    android:id="@+id/security_access_textview"
+                    style="@style/NavigationViewMenuTextView"
+                    android:drawableStart="@drawable/ic_portfolio"
+                    android:text="Security Access" />
+
+                <View style="@style/NavigationViewDividers" />
+
+                <TextView
+                    android:id="@+id/raise_complaints_textview"
+                    style="@style/NavigationViewMenuTextView"
+                    android:drawableStart="@drawable/ic_like"
+                    android:text="Raise Complaints" />
+
+                <View style="@style/NavigationViewDividers" />
+
+                <TextView
+                    android:id="@+id/upload_exp_textview"
+                    style="@style/NavigationViewMenuTextView"
+                    android:drawableStart="@drawable/ic_mutual_funds"
+                    android:text="Upload Ependiture" />
+
+                <View style="@style/NavigationViewDividers" />
+
+                <TextView
+                    android:id="@+id/society_members_textview"
+                    style="@style/NavigationViewMenuTextView"
+                    android:drawableStart="@drawable/ic_news"
+                    android:text="Society Members" />
+
+                <View style="@style/NavigationViewDividers" />
+
+                <TextView
+                    android:id="@+id/announcements_textview"
+                    style="@style/NavigationViewMenuTextView"
+                    android:drawableStart="@drawable/ic_reports"
+                    android:text="Announcements" />
+
+                <View style="@style/NavigationViewDividers" />
+
+                <TextView
+                    android:id="@+id/service_provider_textview"
+                    style="@style/NavigationViewMenuTextView"
+                    android:drawableStart="@drawable/ic_bell"
+                    android:text="Service Provider" />
+
+                <View style="@style/NavigationViewDividers" />
+
+                <TextView
+                    android:id="@+id/waste_management_textview"
+                    style="@style/NavigationViewMenuTextView"
+                    android:drawableStart="@drawable/ic_like"
+                    android:text="Waste Management" />
+
+                <View style="@style/NavigationViewDividers" />
+
+                <TextView
+                    android:id="@+id/clubhouse_textview"
+                    style="@style/NavigationViewMenuTextView"
+                    android:drawableStart="@drawable/ic_news"
+                    android:text="Clubhouse" />
+
+                <View style="@style/NavigationViewDividers" />
+
+                <TextView
+                    android:id="@+id/clubhouse_management_textview"
+                    style="@style/NavigationViewMenuTextView"
+                    android:drawableStart="@drawable/ic_mutual_funds"
+                    android:text="Clubhouse Management" />
+
+                <View style="@style/NavigationViewDividers" />
+
+                <ExpandableListView
+                    android:id="@+id/expandablelistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:childDivider="?attr/expandableViewChildListItemDivider"
+                    android:divider="?attr/navigationViewDivider"
+                    android:dividerHeight="@dimen/navigationViewDividerHeight"
+                    android:groupIndicator="@null"
+                    android:scrollbars="none"
+                    android:transcriptMode="alwaysScroll" />
+
+                <View style="@style/NavigationViewDividers" />
+
+                <TextView
+                    android:id="@+id/society_maintenance_charges_textview"
+                    style="@style/NavigationViewMenuTextView"
+                    android:drawableStart="@drawable/ic_mutual_funds"
+                    android:text="Society Maintenance Charges" />
+
+                <View style="@style/NavigationViewDividers" />
+
+                <TextView
+                    android:id="@+id/change_password_textview"
+                    style="@style/NavigationViewMenuTextView"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:text="Change Password" />
+
+                <View style="@style/NavigationViewDividers" />
+
+                <TextView
+                    android:id="@+id/logout_textview"
+                    style="@style/NavigationViewMenuTextView"
+                    android:drawableStart="@drawable/ic_logout"
+                    android:text="Logout" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        style="@style/OrangeButton"
+                        android:layout_weight="1.5"
+                        android:text="Switch to Boss"
+                        android:visibility="gone"/>
+
+                    <Button
+                        style="@style/WhiteButton"
+                        android:layout_weight="1"
+                        android:text="About Us" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

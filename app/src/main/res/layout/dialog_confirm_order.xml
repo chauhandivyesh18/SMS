@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_textview"
+            style="@style/ConfirmOrderTitleBarBackground"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/montserratregular"
+            android:gravity="center"
+            android:text="Confirm Order"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontLarge" />
+
+        <ImageView
+            android:id="@+id/close_imageview"
+            style="@style/ConfirmOrderTitleBarBackground"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_close" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        style="@style/ConfirmOrderBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/confirm_order_shadow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/company_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="Company :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/cname_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    tools:text="Synergy Bizcon"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/order_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="Order :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/buy_sell_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    tools:text="Buy"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="@dimen/fontMedium" />
+
+                <View
+                    android:layout_width="0.2dp"
+                    android:layout_height="14dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:background="?attr/textColorWhite" />
+
+                <TextView
+                    android:id="@+id/qty_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/at_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:text="\@"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/price_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/type_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserratlight"
+                        android:gravity="center"
+                        android:text="Type :"
+                        android:textColor="?attr/textColorAccent"
+                        android:textSize="@dimen/fontMedium" />
+
+                    <TextView
+                        android:id="@+id/order_type_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/montserratregular"
+                        android:gravity="center"
+                        tools:text="Limit"
+                        android:textColor="?attr/textColorWhite"
+                        android:textSize="@dimen/fontMedium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/val_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserratlight"
+                        android:gravity="center"
+                        android:text="Validity :"
+                        android:textColor="?attr/textColorAccent"
+                        android:textSize="@dimen/fontMedium" />
+
+                    <TextView
+                        android:id="@+id/validity_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/montserratregular"
+                        android:gravity="center"
+                        tools:text="IOC"
+                        android:textColor="?attr/textColorWhite"
+                        android:textSize="@dimen/fontMedium" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/product_text_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="Product :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/product_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    tools:text="100"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/dis_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserratlight"
+                        android:gravity="center"
+                        android:text="Disclose :"
+                        android:textColor="?attr/textColorAccent"
+                        android:textSize="@dimen/fontMedium" />
+
+                    <TextView
+                        android:id="@+id/disclose_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/montserratregular"
+                        android:gravity="center"
+                        tools:text="175"
+                        android:textColor="?attr/textColorWhite"
+                        android:textSize="@dimen/fontMedium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tp_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserratlight"
+                        android:gravity="center"
+                        android:text="Trigger Price :"
+                        android:textColor="?attr/textColorAccent"
+                        android:textSize="@dimen/fontMedium" />
+
+                    <TextView
+                        android:id="@+id/trigger_price_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/montserratregular"
+                        android:gravity="center"
+                        tools:text="100"
+                        android:textColor="?attr/textColorWhite"
+                        android:textSize="@dimen/fontMedium" />
+
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/sl_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserratlight"
+                        android:gravity="center"
+                        android:text="Stoploss :"
+                        android:textColor="?attr/textColorAccent"
+                        android:textSize="@dimen/fontMedium" />
+
+                    <TextView
+                        android:id="@+id/stoploss_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/montserratregular"
+                        android:gravity="center"
+                        tools:text="15"
+                        android:textColor="?attr/textColorWhite"
+                        android:textSize="@dimen/fontMedium" />
+
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tp_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratlight"
+                    android:gravity="center"
+                    android:text="Trigger Price :"
+                    android:textColor="?attr/textColorAccent"
+                    android:textSize="@dimen/fontMedium" />
+
+                <TextView
+                    android:id="@+id/trigger_price_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/montserratregular"
+                    android:gravity="center"
+                    tools:text="100"
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium" />
+
+            </LinearLayout>-->
+
+            <Button
+                android:id="@+id/confirm_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shadowbackgroundgreen"
+                android:fontFamily="@font/montserratregular"
+                android:text="Confirm"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fontMedium" />
+
+        </LinearLayout>
+
+        <!--<View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@drawable/shadow_dialog" />-->
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

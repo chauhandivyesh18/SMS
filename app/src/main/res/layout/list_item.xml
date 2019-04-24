@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/ExpandableChildListItemBackground"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/navigationViewPaddingTopBottom"
+    android:paddingTop="@dimen/navigationViewPaddingTopBottom"
+    android:paddingStart="@dimen/navigationViewExpandableListViewChildPaddingStartEnd"
+    android:paddingEnd="@dimen/navigationViewExpandableListViewChildPaddingStartEnd">
+
+    <ImageView
+        android:id="@+id/expandedListItemIcon"
+        style="@style/navigationIconStyle"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/expandedListItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserratlight"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:textColor="?attr/navigationViewText"
+        android:textSize="@dimen/fontLarge"/>
+
+</LinearLayout>

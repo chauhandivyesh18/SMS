@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Login.PinOrFingerPrintVerificationFragments.PinOrFingerPrintVerificationMidFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/display_pic_imageview"
+        android:layout_width="@dimen/displayPicWidth"
+        android:layout_height="@dimen/displayPicHeight"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/placeholder" />
+
+    <include layout="@layout/greetings_layout" />
+
+    <TextView
+        style="@style/ExtendedLoginFooterTextViewStyle"
+        android:text="@string/enter_pin" />
+
+    <!--<include layout="@layout/pin_edittext_layout" />-->
+
+    <FrameLayout
+        style="@style/ExtendedLoginIconAndEditTextFrameLayoutStyle"
+        android:layout_marginTop="@dimen/enterPinMarginBottom">
+
+        <ImageView style="@style/PasswordIconStyle" />
+
+        <EditText
+            android:id="@+id/enter_pin_edittext"
+            style="@style/LoginPasswordEditTextStyle"
+            android:hint="Enter Pin"
+            android:inputType="textPassword"
+            android:maxLength="12" />
+
+    </FrameLayout>
+
+    <TextView
+        style="@style/ExtendedLoginFooterTextViewStyle"
+        android:layout_marginTop="@dimen/enterPinMarginBottom"
+        android:text="@string/or" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/enterPinMarginBottom"
+        android:tint="?attr/textColorWhite"
+        app:srcCompat="@drawable/ic_fingerprint" />
+
+    <TextView
+        style="@style/ExtendedLoginFooterTextViewStyle"
+        android:layout_marginBottom="0dp"
+        android:text="@string/place_your_fingertip" />
+
+    <Button
+        android:id="@+id/login_button"
+        style="@style/LoginButtonStyle"
+        android:text="@string/login" />
+
+</LinearLayout>

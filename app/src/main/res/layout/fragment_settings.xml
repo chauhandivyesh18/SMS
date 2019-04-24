@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Settings.SettingsFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/indices_ticker_textview"
+                style="@style/SettingsLightTextView"
+                android:text="Indices ticker" />
+
+            <LinearLayout
+                android:id="@+id/indices_switch"
+                style="@style/SwitchLayout">
+
+                <TextView
+                    android:id="@+id/indices_ticker_yes_textview"
+                    style="@style/SwitchOn"
+                    android:text="Yes" />
+
+                <TextView
+                    android:id="@+id/indices_ticker_no_textview"
+                    style="@style/SwitchOff"
+                    android:text="No" />
+
+            </LinearLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/default_order_form_layout"
+                style="@style/SettingsConstraintLayoutStyle"
+                android:layout_below="@id/indices_ticker_textview">
+
+                <TextView
+                    android:id="@+id/default_order_form_textview"
+                    style="@style/SettingsRegularTextView"
+                    android:text="Default Order Form"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/default_order_type_textview"
+                    style="@style/SettingsLightTextView"
+                    android:text="Default Order type"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/default_order_form_textview" />
+
+                <Spinner
+                    android:id="@+id/default_order_type_spinner"
+                    android:layout_width="140dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/spinner_background"
+                    android:padding="1dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/default_order_type_textview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/default_order_type_textview" />
+
+                <TextView
+                    android:id="@+id/default_quantity_textview"
+                    style="@style/SettingsLightTextView"
+                    android:layout_marginTop="16dp"
+                    android:text="Default Qunatity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/default_order_type_textview" />
+
+                <EditText
+                    android:id="@+id/default_quantity_edittext"
+                    android:layout_width="140dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/spinner_background"
+                    android:fontFamily="@font/montserratlight"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:text=""
+                    android:textColor="?attr/textColorWhite"
+                    android:textSize="@dimen/fontMedium"
+                    app:layout_constraintBottom_toBottomOf="@+id/default_quantity_textview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/default_quantity_textview" />
+
+                <TextView
+                    android:id="@+id/default_price_textview"
+                    style="@style/SettingsLightTextView"
+                    android:layout_marginTop="16dp"
+                    android:text="Default Price"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/default_quantity_textview" />
+
+                <Spinner
+                    android:id="@+id/default_price_spinner"
+                    android:layout_width="140dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/spinner_background"
+                    android:padding="1dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/default_price_textview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/default_price_textview" />
+
+                <TextView
+                    android:id="@+id/price_ticks_textview"
+                    style="@style/SettingsLightTextView"
+                    android:layout_marginTop="16dp"
+                    android:text="Price Ticks"
+                    app:layout_constraintEnd_toStartOf="@+id/qty_ticks_textview"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/default_price_textview" />
+
+                <TextView
+                    android:id="@+id/qty_ticks_textview"
+                    style="@style/SettingsLightTextView"
+                    android:layout_marginTop="16dp"
+                    android:text="Quantity Ticks"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/price_ticks_textview"
+                    app:layout_constraintTop_toBottomOf="@id/default_price_textview" />
+
+                <EditText
+                    style="@style/SettingsEdittextStyle"
+                    app:layout_constraintEnd_toEndOf="@id/price_ticks_textview"
+                    app:layout_constraintStart_toStartOf="@id/price_ticks_textview"
+                    app:layout_constraintTop_toBottomOf="@id/price_ticks_textview" />
+
+                <EditText
+                    style="@style/SettingsEdittextStyle"
+                    app:layout_constraintEnd_toEndOf="@id/qty_ticks_textview"
+                    app:layout_constraintStart_toStartOf="@id/qty_ticks_textview"
+                    app:layout_constraintTop_toBottomOf="@id/qty_ticks_textview" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/notifications_layout"
+                style="@style/SettingsConstraintLayoutStyle"
+                android:layout_below="@id/default_order_form_layout">
+
+                <TextView
+                    android:id="@+id/notification_textview"
+                    style="@style/SettingsRegularTextView"
+                    android:text="Notifications"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/market_close_open_textview"
+                    style="@style/SettingsLightTextView"
+                    android:text="Market Close / Open"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/notification_textview" />
+
+                <LinearLayout
+                    android:id="@+id/market_close_open_switch"
+                    style="@style/SwitchLayout"
+                    app:layout_constraintBottom_toBottomOf="@id/market_close_open_textview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/market_close_open_textview">
+
+                    <TextView
+                        android:id="@+id/market_close_open_on_textview"
+                        style="@style/SwitchOn"
+                        android:text="On" />
+
+                    <TextView
+                        android:id="@+id/market_close_open_off_textview"
+                        style="@style/SwitchOff"
+                        android:text="Off" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sensex_change_textview"
+                    style="@style/SettingsLightTextView"
+                    android:layout_marginTop="16dp"
+                    android:text="Sensex change by 0.5%"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/market_close_open_textview" />
+
+                <LinearLayout
+                    android:id="@+id/sensex_change_switch"
+                    style="@style/SwitchLayout"
+                    app:layout_constraintBottom_toBottomOf="@id/sensex_change_textview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/sensex_change_textview">
+
+                    <TextView
+                        android:id="@+id/sensex_change_on_textview"
+                        style="@style/SwitchOn"
+                        android:text="On" />
+
+                    <TextView
+                        android:id="@+id/sensex_change_off_textview"
+                        style="@style/SwitchOff"
+                        android:text="Off" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/portfolio_value_alerts_textview"
+                    style="@style/SettingsLightTextView"
+                    android:layout_marginTop="16dp"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="0dp"
+                    android:text="Portfolio value alerts\n(by more than 1%)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sensex_change_textview" />
+
+                <LinearLayout
+                    android:id="@+id/portfolio_value_alert_switch"
+                    style="@style/SwitchLayout"
+                    app:layout_constraintBottom_toBottomOf="@id/portfolio_value_alerts_textview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/portfolio_value_alerts_textview">
+
+                    <TextView
+                        android:id="@+id/portfolio_value_alerts_on_textview"
+                        style="@style/SwitchOn"
+                        android:text="On" />
+
+                    <TextView
+                        android:id="@+id/portfolio_value_alerts_off_textview"
+                        style="@style/SwitchOff"
+                        android:text="Off" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/price_alerts_textview"
+                    style="@style/SettingsLightTextView"
+                    android:layout_marginTop="16dp"
+                    android:text="Price alerts"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/portfolio_value_alert_switch" />
+
+                <LinearLayout
+                    android:id="@+id/price_alerts_switch"
+                    style="@style/SwitchLayout"
+                    app:layout_constraintBottom_toBottomOf="@id/price_alerts_textview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/price_alerts_textview">
+
+                    <TextView
+                        android:id="@+id/price_alerts_on_textview"
+                        style="@style/SwitchOn"
+                        android:text="On" />
+
+                    <TextView
+                        android:id="@+id/price_alerts_off_textview"
+                        style="@style/SwitchOff"
+                        android:text="Off" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/rms_textview"
+                    style="@style/SettingsLightTextView"
+                    android:layout_marginTop="16dp"
+                    android:text="RMS"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/price_alerts_textview" />
+
+                <LinearLayout
+                    android:id="@+id/rms_switch"
+                    style="@style/SwitchLayout"
+                    app:layout_constraintBottom_toBottomOf="@id/rms_textview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/rms_textview">
+
+                    <TextView
+                        android:id="@+id/rms_on_textview"
+                        style="@style/SwitchOn"
+                        android:text="On" />
+
+                    <TextView
+                        android:id="@+id/rms_off_textview"
+                        style="@style/SwitchOff"
+                        android:text="Off" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/order_execution_textview"
+                    style="@style/SettingsLightTextView"
+                    android:layout_marginTop="16dp"
+                    android:text="Order Execution"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rms_textview" />
+
+                <LinearLayout
+                    android:id="@+id/order_execution_switch"
+                    style="@style/SwitchLayout"
+                    app:layout_constraintBottom_toBottomOf="@id/order_execution_textview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/order_execution_textview">
+
+                    <TextView
+                        android:id="@+id/order_execution_on_textview"
+                        style="@style/SwitchOn"
+                        android:text="On" />
+
+                    <TextView
+                        android:id="@+id/order_execution_off_textview"
+                        style="@style/SwitchOff"
+                        android:text="Off" />
+
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/security_layout"
+                style="@style/SettingsConstraintLayoutStyle"
+                android:layout_below="@id/notifications_layout">
+
+                <TextView
+                    android:id="@+id/security_textview"
+                    style="@style/SettingsRegularTextView"
+                    android:text="Security"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/launch_app_with_textview"
+                    style="@style/SettingsLightTextView"
+                    android:text="Launch app with\nTouch Id"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/security_textview" />
+
+                <LinearLayout
+                    android:id="@+id/launch_app_with_switch"
+                    style="@style/SwitchLayout"
+                    app:layout_constraintBottom_toBottomOf="@id/launch_app_with_textview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/launch_app_with_textview">
+
+                    <TextView
+                        android:id="@+id/launch_app_with_on_textview"
+                        style="@style/SwitchOn"
+                        android:text="On" />
+
+                    <TextView
+                        android:id="@+id/launch_app_with_off_textview"
+                        style="@style/SwitchOff"
+                        android:text="Off" />
+
+                </LinearLayout>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/themes_layout"
+                style="@style/SettingsConstraintLayoutStyle"
+                android:layout_below="@id/security_layout">
+
+                <TextView
+                    android:id="@+id/themes_textview"
+                    style="@style/SettingsRegularTextView"
+                    android:text="Themes"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/darkblue_theme_button"
+                    style="@style/SettingsThemesButton"
+                    android:text="DarkBlue"
+                    app:layout_constraintEnd_toStartOf="@+id/black_theme_button"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/themes_textview" />
+
+                <Button
+                    android:id="@+id/black_theme_button"
+                    style="@style/SettingsThemesButton"
+                    android:text="Black"
+                    app:layout_constraintEnd_toStartOf="@+id/white_theme_button"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/darkblue_theme_button"
+                    app:layout_constraintTop_toBottomOf="@id/themes_textview" />
+
+                <Button
+                    android:id="@+id/white_theme_button"
+                    style="@style/SettingsThemesButton"
+                    android:text="White"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/black_theme_button"
+                    app:layout_constraintTop_toBottomOf="@id/themes_textview" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/version_layout"
+                style="@style/SettingsConstraintLayoutStyle"
+                android:layout_height="56dp"
+                android:layout_below="@id/themes_layout"
+                android:paddingBottom="0dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/app_version_textview"
+                    style="@style/SettingsRegularTextView"
+                    android:text="App Version :"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/version_textview"
+                    style="@style/SettingsLightTextView"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="TradeOn v1.1"
+                    app:layout_constraintStart_toEndOf="@id/app_version_textview"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

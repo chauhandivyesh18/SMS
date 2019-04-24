@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="feed_item_margin">5dp</dimen>
+    <dimen name="feed_item_padding_top_bottom">20dp</dimen>
+    <dimen name="feed_item_padding_left_right">12dp</dimen>
+    <dimen name="feed_item_profile_pic">50dp</dimen>
+    <dimen name="feed_item_profile_info_padd">10dp</dimen>
+    <dimen name="feed_item_profile_name">15dp</dimen>
+    <dimen name="feed_item_timestamp">13dp</dimen>
+    <dimen name="feed_item_status_pad_left_right">15dp</dimen>
+    <dimen name="feed_item_status_pad_top">8dp</dimen>
+    <dimen name="feed_item_corner_radius">3dp</dimen>
+    <dimen name="feed_item_border_width">1dp</dimen>
+
+
+    <dimen name="fontExtraLarge">20sp</dimen>
+    <dimen name="fontLarge">16sp</dimen>
+    <dimen name="fontMedium">14sp</dimen>
+    <dimen name="fontSmall">12sp</dimen>
+    <dimen name="fontExtraSmall">10sp</dimen>
+
+    <dimen name="layoutLeftRightPadding">24dp</dimen>
+
+    <dimen name="loginFrameLayoutPaddingTopBottom">7dp</dimen>
+    <dimen name="loginFrameLayoutPaddingStartEnd">13dp</dimen>
+
+    <dimen name="edittextMarginStart">28dp</dimen>
+
+    <dimen name="buttonMarginTop">34dp</dimen>
+    <dimen name="ExtendedButtonMarginBottom">41dp</dimen>
+
+    <dimen name="appLogoWidth">200dp</dimen>
+
+    <dimen name="appLogoMarginTop">40dp</dimen>
+    <dimen name="footerMarginBottom">59dp</dimen>
+
+    <dimen name="buttonHeight">40dp</dimen>
+
+    <dimen name="pipeWidth">0.5dp</dimen>
+    <dimen name="pipeHeight">16dp</dimen>
+    <dimen name="pipeMarginStart">10dp</dimen>
+    <dimen name="pipeMarginEnd">10dp</dimen>
+
+    <dimen name="frameMarginTop">20dp</dimen>
+    <dimen name="greetingsMarginTopAndBottom">0dp</dimen>
+    <dimen name="greetingsMarginBottom">12dp</dimen>
+    <dimen name="pinBoxMarginStartEnd">7.5dp</dimen>
+
+    <dimen name="displayPicWidth">50dp</dimen>
+    <dimen name="displayPicHeight">50dp</dimen>
+
+    <dimen name="enterPinMarginBottom">10dp</dimen>
+
+    <dimen name="pinEditTextWidthAndHeight">45dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="navigationViewDividerHeight">0.1dp</dimen>
+
+    <dimen name="navigationViewPaddingStartEnd">8dp</dimen>
+    <dimen name="navigationViewPaddingTopBottom">8dp</dimen>
+
+    <dimen name="navigationViewExpandableListViewChildPaddingStartEnd">32dp</dimen>
+
+    <dimen name="buttonPaddingTopAndBottom">16dp</dimen>
+
+    <dimen name="overviewMidCardviewElevation">0dp</dimen>
+
+    <dimen name="moreLessButtonWidth">84dp</dimen>
+    <dimen name="moreLessButtonHeight">40dp</dimen>
+    <dimen name="moreLessButtonElevation">0dp</dimen>
+
+    <dimen name="infoButtonsCardviewElevation">0dp</dimen>
+    <dimen name="infoTabsCardviewElevation">0dp</dimen>
+
+    <dimen name="infoSwitchCardviewElevation">0dp</dimen>
+    <dimen name="spinnerHeight">30dp</dimen>
+</resources>
