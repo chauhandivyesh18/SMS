@@ -20,6 +20,7 @@ import com.millionaires.sms.Base.BaseFragment;
 import com.millionaires.sms.Common.Constants;
 import com.millionaires.sms.Dashboard.GridNavigation.ClubHouseManagement.User.ClubhouseUserActivity;
 import com.millionaires.sms.Dashboard.GridNavigation.RaiseComplaint.RaisecomplaintActivity;
+import com.millionaires.sms.Dashboard.GridNavigation.SecurityAccess.UserMode.UserModeActivity;
 import com.millionaires.sms.Dashboard.NavigationViewMenu.SecurityAccessFragment;
 import com.millionaires.sms.R;
 
@@ -165,10 +166,7 @@ public class DashboardFragment extends BaseFragment {
                 } else if (name.equals("Maintainance Charge")) {
 
                 } else if (name.equals("Security Access Management")) {
-                    fragment = new SecurityAccessFragment();
-                    FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
-                    ft.replace(R.id.navigation_view_fragments_container, fragment);
-                    ft.commit();
+                    startActivity(new Intent(mContext, UserModeActivity.class));
                 }
 
             }

@@ -143,7 +143,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            android:fontFamily="@font/montserratregular"
+            android:fontFamily="@font/montserratlight"
             android:text="Schedule"
             android:textColor="?attr/textColorAccent"
             android:textSize="@dimen/fontLarge" />
@@ -157,7 +157,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            android:fontFamily="@font/montserratregular"
+            android:fontFamily="@font/montserratlight"
             android:text="Clear"
             android:textColor="?attr/textColorAccent"
             android:textSize="@dimen/fontLarge" />
