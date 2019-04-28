@@ -170,6 +170,7 @@
     <color name="colorGray">@android:color/darker_gray</color>
     <color name="colorTransparent">@android:color/transparent</color>
     <color name="colorBlue">#28BCEE</color>
+    <color name="colorYellow">#ffd600</color>
 
     <color name="tabsTextColor">#8F8F8F</color>
     <color name="textColorDarkStart">#132361</color>

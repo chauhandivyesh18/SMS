@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Dashboard.GridNavigation.ClubHouseManagement.User.ScheduleFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserratregular"
+            android:text="Select Activity"
+            android:textColor="?attr/textColorAccent"
+            android:textSize="@dimen/fontLarge" />
+
+        <Spinner
+            android:id="@+id/activity_spinner"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spinnerHeight"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:padding="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserratregular"
+            android:text="Select Date"
+            android:textColor="?attr/textColorAccent"
+            android:textSize="@dimen/fontLarge" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spinnerHeight"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:layout_marginEnd="8dp">
+
+            <EditText
+                android:id="@+id/date_edittext"
+                style="@style/LoginEditTextStyle"
+                android:layout_marginStart="8dp"
+                android:textColor="?attr/textColorWhite"
+                android:hint="DD/MM/YYYY"
+                android:maxLength="10"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/date_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:paddingEnd="4dp"
+                app:srcCompat="@drawable/ic_dob" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserratregular"
+            android:text="Select Slot"
+            android:textColor="?attr/textColorAccent"
+            android:textSize="@dimen/fontLarge" />
+
+        <Spinner
+            android:id="@+id/slot_spinner"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spinnerHeight"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:padding="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserratregular"
+            android:text="Accompanies"
+            android:textColor="?attr/textColorAccent"
+            android:textSize="@dimen/fontLarge" />
+
+        <Spinner
+            android:id="@+id/accompanies_spinner"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spinnerHeight"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:padding="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserratregular"
+            android:text="Schedule"
+            android:textColor="?attr/textColorAccent"
+            android:textSize="@dimen/fontLarge" />
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserratregular"
+            android:text="Clear"
+            android:textColor="?attr/textColorAccent"
+            android:textSize="@dimen/fontLarge" />
+
+    </LinearLayout>
+
+</LinearLayout>

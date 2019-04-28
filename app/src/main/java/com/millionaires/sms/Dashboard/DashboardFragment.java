@@ -18,8 +18,8 @@ import android.widget.GridView;
 
 import com.millionaires.sms.Base.BaseFragment;
 import com.millionaires.sms.Common.Constants;
-import com.millionaires.sms.Dashboard.GridNavigation.ClubHouseManagement.ClubhouseActivity;
-import com.millionaires.sms.Dashboard.GridNavigation.ClubHouseManagement.RaiseComplaint.RaisecomplaintActivity;
+import com.millionaires.sms.Dashboard.GridNavigation.ClubHouseManagement.User.ClubhouseUserActivity;
+import com.millionaires.sms.Dashboard.GridNavigation.RaiseComplaint.RaisecomplaintActivity;
 import com.millionaires.sms.Dashboard.NavigationViewMenu.SecurityAccessFragment;
 import com.millionaires.sms.R;
 
@@ -145,7 +145,7 @@ public class DashboardFragment extends BaseFragment {
                                     int i, long id) {
                 String name = arrGridModel.get(i).getNav_Name();
                 if (name.equals("Club Management")) {
-                    startActivity(new Intent(mContext, ClubhouseActivity.class));
+                    startActivity(new Intent(mContext, ClubhouseUserActivity.class));
                 } else if (name.equals("Expenditure Report")) {
 
                 } else if (name.equals("Waste Management")) {
