@@ -17,6 +17,7 @@
             android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
             android:maxLength="25"
             style="@style/LoginEditTextStyle"
+            android:text=""
             android:hint="@string/usernames" />
 
     </FrameLayout>
@@ -46,6 +47,7 @@
             android:maxLength="12"
             android:inputType="textPassword"
             style="@style/LoginPasswordEditTextStyle"
+            android:text=""
             android:hint="@string/password" />
 
     </FrameLayout>

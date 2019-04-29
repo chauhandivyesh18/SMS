@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Dashboard.GridNavigation.SecurityAccess.UserMode.PreApproveDeliveryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserratregular"
+                        android:text="Day of visit"
+                        android:textColor="?attr/textColorAccent"
+                        android:textSize="@dimen/fontLarge" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spinnerHeight"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner_background">
+
+                        <EditText
+                            android:id="@+id/date_edittext"
+                            style="@style/LoginEditTextStyle"
+                            android:layout_marginStart="8dp"
+                            android:hint="DD/MM/YYYY"
+                            android:maxLength="10"
+                            android:text=""
+                            android:textColor="?attr/textColorWhite" />
+
+                        <ImageView
+                            android:id="@+id/date_imageview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end|center_vertical"
+                            android:paddingEnd="4dp"
+                            app:srcCompat="@drawable/ic_dob" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/pick_time_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserratregular"
+                        android:text="Pick time of visit"
+                        android:textColor="?attr/textColorAccent"
+                        android:textSize="@dimen/fontLarge" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/spinnerHeight"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_background">
+
+                            <EditText
+                                android:id="@+id/from_edittext"
+                                style="@style/LoginEditTextStyle"
+                                android:layout_marginStart="8dp"
+                                android:maxLength="10"
+                                android:text=""
+                                android:textColor="?attr/textColorWhite" />
+
+                            <ImageView
+                                android:id="@+id/from_imageview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|center_vertical"
+                                android:paddingEnd="4dp"
+                                app:srcCompat="@drawable/ic_dob" />
+
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="-  " />
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/spinnerHeight"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/spinner_background">
+
+                            <EditText
+                                android:id="@+id/to_edittext"
+                                style="@style/LoginEditTextStyle"
+                                android:layout_marginStart="8dp"
+                                android:maxLength="10"
+                                android:text=""
+                                android:textColor="?attr/textColorWhite" />
+
+                            <ImageView
+                                android:id="@+id/to_imageview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|center_vertical"
+                                android:paddingEnd="4dp"
+                                app:srcCompat="@drawable/ic_dob" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:text="OR" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:text="Anytime during day" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserratregular"
+                        android:text="Select Company"
+                        android:textColor="?attr/textColorAccent"
+                        android:textSize="@dimen/fontLarge" />
+
+                    <Spinner
+                        android:id="@+id/company_spinner"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spinnerHeight"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner_background"
+                        android:padding="1dp" />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Collect my courier at gate" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spinnerHeight"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/spinner_background">
+
+                    <EditText
+                        android:id="@+id/orderno_edittext"
+                        style="@style/LoginEditTextStyle"
+                        android:layout_marginStart="0dp"
+                        android:hint="Enter Order No."
+                        android:maxLength="10"
+                        android:paddingStart="8dp"
+                        android:text=""
+                        android:textColor="?attr/textColorWhite" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserratlight"
+                        android:text="Pre-Approve"
+                        android:textColor="?attr/textColorAccent"
+                        android:textSize="@dimen/fontLarge" />
+
+                    <View
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserratlight"
+                        android:text="Clear"
+                        android:textColor="?attr/textColorAccent"
+                        android:textSize="@dimen/fontLarge" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

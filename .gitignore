@@ -1,0 +1,6 @@
+.gradle
+.idea
+SMS.iml
+app/build
+app/app.iml
+app/src/main/assets/Trade.db

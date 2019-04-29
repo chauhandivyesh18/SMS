@@ -1,4 +1,4 @@
-package com.millionaires.sms.Dashboard.GridNavigation.ClubHouseManagement.RaiseComplaint;
+package com.millionaires.sms.Dashboard.GridNavigation.RaiseComplaint;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
