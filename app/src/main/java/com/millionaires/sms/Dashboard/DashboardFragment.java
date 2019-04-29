@@ -7,7 +7,6 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
@@ -18,10 +17,10 @@ import android.widget.GridView;
 
 import com.millionaires.sms.Base.BaseFragment;
 import com.millionaires.sms.Common.Constants;
-import com.millionaires.sms.Dashboard.GridNavigation.ClubHouseManagement.User.ClubhouseUserActivity;
+import com.millionaires.sms.Dashboard.GridNavigation.ClubHouseManagement.ClubhouseActivity;
 import com.millionaires.sms.Dashboard.GridNavigation.RaiseComplaint.RaisecomplaintActivity;
-import com.millionaires.sms.Dashboard.GridNavigation.SecurityAccess.UserMode.UserModeActivity;
-import com.millionaires.sms.Dashboard.NavigationViewMenu.SecurityAccessFragment;
+import com.millionaires.sms.Dashboard.GridNavigation.SecurityAccess.SecurityMode.DeliveryActivity;
+import com.millionaires.sms.Dashboard.GridNavigation.SecurityAccess.SecurityMode.GuestActivity;
 import com.millionaires.sms.R;
 
 import java.util.ArrayList;
@@ -146,7 +145,7 @@ public class DashboardFragment extends BaseFragment {
                                     int i, long id) {
                 String name = arrGridModel.get(i).getNav_Name();
                 if (name.equals("Club Management")) {
-                    startActivity(new Intent(mContext, ClubhouseUserActivity.class));
+                    startActivity(new Intent(mContext, ClubhouseActivity.class));
                 } else if (name.equals("Expenditure Report")) {
 
                 } else if (name.equals("Waste Management")) {
@@ -155,7 +154,7 @@ public class DashboardFragment extends BaseFragment {
                     ft.replace(R.id.navigation_view_fragments_container, fragment);
                     ft.commit();*/
                 } else if (name.equals("Raise Complaints")) {
-                    startActivity(new Intent(mContext, RaisecomplaintActivity.class));
+                   startActivity(new Intent(mContext,RaisecomplaintActivity.class));
 
                 } else if (name.equals("Socity Memebers")) {
 
@@ -166,7 +165,7 @@ public class DashboardFragment extends BaseFragment {
                 } else if (name.equals("Maintainance Charge")) {
 
                 } else if (name.equals("Security Access Management")) {
-                    startActivity(new Intent(mContext, UserModeActivity.class));
+                    startActivity(new Intent(mContext,DeliveryActivity.class));
                 }
 
             }

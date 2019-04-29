@@ -54,6 +54,10 @@ dependencies {
     implementation 'com.github.castorflex.smoothprogressbar:library-circular:1.0.1'
     testImplementation 'junit:junit:4.12'
     implementation 'me.relex:circleindicator:1.2.2@aar'
+    //pinview
+    implementation 'com.github.GoodieBag:Pinview:v1.3'
     // Shimmer
     implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+
+    //implementation 'com.github.f0ris.sweetalert:library:1.5.1'
 }

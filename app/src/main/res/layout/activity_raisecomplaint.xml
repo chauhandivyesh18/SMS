@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityBackground"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Dashboard.GridNavigation.ClubHouseManagement.RaiseComplaint.RaisecomplaintActivity">
+    android:layout_height="match_parent">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbarlayout"
@@ -50,13 +50,13 @@
                             android:textColor="@color/colorWhite"
                             android:textSize="@dimen/fontExtraLarge" />
 
-                        <!--<ImageView
+                        <ImageView
                             android:id="@+id/attachment"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:adjustViewBounds="true"
                             android:layout_weight="0.5"
-                            app:srcCompat="@drawable/ic_attachment" />-->
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/ic_filter" />
 
                         <!--<TextView
                             android:id="@+id/tv_share"
@@ -79,4 +79,36 @@
 
     </android.support.design.widget.AppBarLayout>
 
-</android.support.constraint.ConstraintLayout>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbarlayout"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeToRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:scrollbars="vertical" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/blueIconTint"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</RelativeLayout>

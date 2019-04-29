@@ -51,7 +51,6 @@ import com.millionaires.sms.Dashboard.ExpandableList.ExpandableListModel;
 import com.millionaires.sms.Dashboard.NavigationViewMenu.Announcements.AnnouncementsFragment;
 import com.millionaires.sms.Dashboard.NavigationViewMenu.Bazaar.BazaarFragment;
 import com.millionaires.sms.Dashboard.NavigationViewMenu.ExpenditureReports.ExpenditureReportsMainFragment;
-import com.millionaires.sms.Dashboard.NavigationViewMenu.SecurityAccessFragment;
 import com.millionaires.sms.R;
 import com.millionaires.sms.Search.SearchFragment;
 import com.millionaires.sms.Settings.SettingsActivity;
@@ -271,7 +270,7 @@ public class DashboardActivity extends BaseActivity implements NavigationView.On
             }
         });
 
-        final SecurityAccessFragment securityAccessFragment = new SecurityAccessFragment();
+        /*final SecurityAccessFragment securityAccessFragment = new SecurityAccessFragment();
         TextView SecurityAccess = (TextView) findViewById(R.id.security_access_textview);
         SecurityAccess.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -280,7 +279,7 @@ public class DashboardActivity extends BaseActivity implements NavigationView.On
                 switchFragment = true;
                 mDrawer.closeDrawer(GravityCompat.START);
             }
-        });
+        });*/
 
         /*final RaiseComplaintsFragment raiseComplaintsFragment = new RaiseComplaintsFragment();
         TextView RaiseComplaints = (TextView) findViewById(R.id.raise_complaints_textview);

@@ -11,7 +11,7 @@ import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.millionaires.sms.Dialogs.DetailsDialog;
+import com.millionaires.sms.Dialogs.AnnouncementDialog;
 import com.millionaires.sms.R;
 
 import java.util.ArrayList;
@@ -69,7 +69,7 @@ public class AnnouncementAdapter extends RecyclerView.Adapter<AnnouncementAdapte
         @Override
         public void onClick(View v) {
             int position = getAdapterPosition();
-            DetailsDialog confirmDialog = new DetailsDialog(context, mAnnouncelist.get(position).getTitle(), false,mAnnouncelist.get(position).getDatetime(),mAnnouncelist.get(position).getDescription());
+            AnnouncementDialog confirmDialog = new AnnouncementDialog(context, mAnnouncelist.get(position).getTitle(), false,mAnnouncelist.get(position).getDatetime(),mAnnouncelist.get(position).getDescription());
             confirmDialog.show();
             Window window = confirmDialog.getWindow();
             window.setLayout(ConstraintLayout.LayoutParams.MATCH_PARENT, ConstraintLayout.LayoutParams.WRAP_CONTENT);

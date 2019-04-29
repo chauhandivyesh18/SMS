@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_complaintno"
+            style="@style/ConfirmOrderTitleBarBackground"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/montserratregular"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontLarge"
+            tools:text="Info" />
+
+        <ImageView
+            android:id="@+id/close_imageview"
+            style="@style/ConfirmOrderTitleBarBackground"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end"
+            android:padding="10dp"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_close" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        style="@style/ConfirmOrderBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@drawable/confirm_order_shadow" />
+
+        <LinearLayout
+            android:id="@+id/lnr_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratregular"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontLarge"
+                tools:text="Title" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorBlack" />
+
+        <LinearLayout
+            android:id="@+id/lnr_descr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnr_title"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/decriptions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratregular"
+                android:textColor="?attr/textColorWhite"
+                android:textSize="@dimen/fontMedium"
+                tools:text="You have been logged out successfully." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnr_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnr_descr"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:paddingLeft="12dp"
+            android:weightSum="12">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:fontFamily="@font/montserratregular"
+                android:text="Status : "
+                android:textColor="?attr/textColorWhite"
+                android:textSize="@dimen/fontLarge" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:fontFamily="@font/montserratregular"
+                android:text="Resolved "
+                android:textColor="?attr/textColorWhite"
+                android:textSize="@dimen/fontLarge"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnr_images"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/lnr_descr"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="12">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+                android:src="@drawable/profile" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+                android:src="@drawable/profile" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+                android:src="@drawable/profile" />
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+                android:src="@drawable/profile" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnr_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnr_images"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/resolved_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shadowbackgroundgreen"
+                android:fontFamily="@font/montserratregular"
+                android:text="Resolved"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fontSmall" />
+
+            <Button
+                android:id="@+id/observation_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shadowbackgroundgreen"
+                android:backgroundTint="@color/buttonOrange"
+                android:fontFamily="@font/montserratregular"
+                android:text="obeservation"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fontSmall" />
+
+            <Button
+                android:id="@+id/close_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shadowbackgroundgreen"
+                android:backgroundTint="@color/trashIconBackground"
+                android:fontFamily="@font/montserratregular"
+                android:text="Closed"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fontSmall" />
+
+            <Button
+                android:id="@+id/closecomplaint_button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shadowbackgroundgreen"
+                android:backgroundTint="@color/trashIconBackground"
+                android:fontFamily="@font/montserratregular"
+                android:text="Closed"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/fontMedium"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

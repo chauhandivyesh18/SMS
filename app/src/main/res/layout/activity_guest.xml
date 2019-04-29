@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Dashboard.GridNavigation.ClubHouseManagement.User.ClubhouseUserActivity">
+    >
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbarlayout"
@@ -47,17 +47,9 @@
                             android:layout_marginStart="16dp"
                             android:layout_weight="3"
                             android:fontFamily="@font/montserratlight"
-                            android:text="Club House"
+                            android:text="Validate Guest"
                             android:textColor="@color/colorWhite"
                             android:textSize="@dimen/fontExtraLarge" />
-
-                        <!--<ImageView
-                            android:id="@+id/attachment"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:adjustViewBounds="true"
-                            android:layout_weight="0.5"
-                            app:srcCompat="@drawable/ic_attachment" />-->
 
                         <!--<TextView
                             android:id="@+id/tv_share"
@@ -78,19 +70,64 @@
 
         </android.support.v7.widget.Toolbar>
 
-        <android.support.design.widget.TabLayout
-            android:id="@+id/tablayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:tabIndicatorColor="@color/colorWhite"
-            app:tabSelectedTextColor="@color/colorWhite"
-            app:tabTextColor="@color/colorWhite" />
-
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="18dp"
+        android:layout_below="@+id/appbarlayout">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spinnerHeight"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/spinner_background">
 
-</LinearLayout>
+            <EditText
+                android:id="@+id/flatno_edittext"
+                style="@style/LoginEditTextStyle"
+                android:layout_marginStart="0dp"
+                android:hint="Enter FlatNo "
+                android:maxLength="10"
+                android:paddingStart="8dp"
+                android:text=""
+                android:textColor="?attr/textColorWhite" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Please type ths Verification Code"/>
+
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:pinWidth="50dp"
+            android:minHeight="50dp"
+            app:pinLength="4"
+            app:cursorVisible="true"
+            app:forceKeyboard="true"
+            app:inputType="number">
+
+        </com.goodiebag.pinview.Pinview>
+
+        <Button
+            android:id="@+id/btn_getdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shadowbackgroundgreen"
+            android:fontFamily="@font/montserratregular"
+            android:text="Get Details"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/fontSmall" />
+
+    </LinearLayout>
+
+</RelativeLayout>

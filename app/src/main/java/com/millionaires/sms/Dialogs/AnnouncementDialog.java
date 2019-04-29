@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.millionaires.sms.Common.SharedPrefHelper;
 import com.millionaires.sms.R;
 
-public class DetailsDialog extends Dialog {
+public class AnnouncementDialog extends Dialog {
     Context mContext;
     TextView mTitleTextView;
     TextView mMsgTextView;
@@ -21,7 +21,7 @@ public class DetailsDialog extends Dialog {
     SharedPrefHelper mSharedPrefHelper;
     boolean isCancelable;
 
-    public DetailsDialog(@NonNull Context context, String msg, boolean isCancelable, String DateTime, String Caption) {
+    public AnnouncementDialog(@NonNull Context context, String msg, boolean isCancelable, String DateTime, String Caption) {
         super(context);
         mContext = context;
         this.Caption = Caption;
@@ -46,7 +46,7 @@ public class DetailsDialog extends Dialog {
         mCloseImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DetailsDialog.this.dismiss();
+                AnnouncementDialog.this.dismiss();
             }
         });
         mTitleTextView.setText(heading);

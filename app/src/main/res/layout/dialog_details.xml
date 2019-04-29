@@ -49,6 +49,28 @@
             android:background="@drawable/confirm_order_shadow" />
 
         <LinearLayout
+            android:id="@+id/lnr_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserratregular"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/fontExtraLarge"
+                tools:text="Title"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorBlack"/>
+
+        <LinearLayout
+            android:layout_below="@+id/lnr_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -59,46 +81,56 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratregular"
-                android:gravity="center"
                 android:textColor="?attr/textColorWhite"
                 android:textSize="@dimen/fontMedium"
                 tools:text="You have been logged out successfully." />
 
             <LinearLayout
-                android:id="@+id/buttons_layout"
+                android:id="@+id/lnr_images"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_marginTop="25dp"
                 android:gravity="center"
+                android:weightSum="12"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/cancel_button"
-                    android:layout_width="100dp"
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@drawable/shadowbackgroundgreen"
-                    android:fontFamily="@font/montserratregular"
-                    android:text="Cancel"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/fontMedium"
-                    android:visibility="gone"/>
+                    android:layout_weight="3"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/profile"/>
 
-                <Button
-                    android:id="@+id/ok_button"
-                    android:layout_width="100dp"
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@drawable/shadowbackgroundgreen"
-                    android:fontFamily="@font/montserratregular"
-                    android:text="OK"
-                    android:visibility="gone"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/fontMedium" />
+                    android:layout_weight="3"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/profile"/>
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/profile"/>
+
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/profile" />
 
             </LinearLayout>
-
         </LinearLayout>
+
+
+
 
     </RelativeLayout>
 

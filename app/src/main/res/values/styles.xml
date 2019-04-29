@@ -323,6 +323,17 @@
         <item name="android:layout_marginStart">@dimen/edittextMarginStart</item>
     </style>
 
+    <style name="NormalEdittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:fontFamily">@font/montserratlight</item>
+        <item name="android:textColor">?attr/textColorAccent</item>
+        <item name="android:textColorHint">?attr/textColorAccent</item>
+        <item name="android:textSize">@dimen/fontMedium</item>
+        <item name="android:text"></item>
+    </style>
+
     <style name="LoginPasswordEditTextStyle" parent="LoginEditTextStyle">
         <item name="android:password">true</item>
     </style>
